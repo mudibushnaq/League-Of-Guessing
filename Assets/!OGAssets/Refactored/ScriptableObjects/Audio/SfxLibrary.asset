@@ -1,0 +1,350 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671aeddca9faf604787690c81d382ce9, type: 3}
+  m_Name: SfxLibrary
+  m_EditorClassIdentifier: 
+  banks:
+  - id: 0
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 0}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 0
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 1
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: f978e6a497f00bc4f86eb0a235174adc, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 2
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 0f7a468db7df27d4c942fdb8bf7eb774, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 3
+    avoidImmediateRepeat: 1
+    variants:
+    - clip: {fileID: 8300000, guid: 452589a2b8ed05a408e06e7ed6b09216, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 0
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 4
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 31164f4934d664cbfb5da2cb753d94f7, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -30
+      duckFadeOut: 100
+      duckFadeIn: 100
+  - id: 5
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 2df120c6edf5a430d9f447190463d839, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+  - id: 6
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 54088a53b28671648a293c9bba7426b3, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+  - id: 7
+    avoidImmediateRepeat: 1
+    variants:
+    - clip: {fileID: 8300000, guid: 7d4c88f827565094194492a55bc7a0c9, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+    - clip: {fileID: 8300000, guid: dfb34e41731f76b448a4e772655b4e19, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+    - clip: {fileID: 8300000, guid: 41c375a2f724fba4f8430398e8515bc4, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+  - id: 8
+    avoidImmediateRepeat: 1
+    variants:
+    - clip: {fileID: 8300000, guid: 6ded740ba2417fe4babffb78af75a016, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+    - clip: {fileID: 8300000, guid: bfc7dcf7c97f66248a1bd680a2a52b35, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 0
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+  - id: 9
+    avoidImmediateRepeat: 1
+    variants:
+    - clip: {fileID: 8300000, guid: 21ad4db0a21d2054db045de140354600, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+    - clip: {fileID: 8300000, guid: f7b6e2075b5073648aaac8096c78c437, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 0
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+  - id: 10
+    avoidImmediateRepeat: 1
+    variants:
+    - clip: {fileID: 8300000, guid: 264cf5bfd79d7fe48ba795a31b027801, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 1
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20
+    - clip: {fileID: 8300000, guid: 6693e1e4554c2ff489c9b06330493c4c, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 20
+      duckFadeIn: 10
+  - id: 11
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 90e09a1aeb5278a42a39e94768d6619c, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 30
+      duckFadeIn: 10
+  - id: 12
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: b53c5b08169ca6c4eacedd4f4adb4654, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 14
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 0c6fee87195ac67468470c0b02ca776c, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 13
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 76856f82e11139c4bb689121ea2e7df5, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 15
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 55577bff94d3c5147945ce3ee177e4b1, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 17
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: f4cb650682e786d42b276afdfbee1946, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 16
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 6163d7f5b25f8834badf1350c03630ee, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 18
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: dbbde09cec3b4794f8809d535caefb52, type: 3}
+      volume: 0.5
+      pitch: 0.5
+      pitchJitter: 0
+      weight: 1
+      category: 1
+      overrideDuck: 0
+      duckBgm: 0
+      duckDb: 0
+      duckFadeOut: 0
+      duckFadeIn: 0
+  - id: 19
+    avoidImmediateRepeat: 0
+    variants:
+    - clip: {fileID: 8300000, guid: 54088a53b28671648a293c9bba7426b3, type: 3}
+      volume: 0.5
+      pitch: 0
+      pitchJitter: 0
+      weight: 1
+      category: 4
+      overrideDuck: 0
+      duckBgm: 1
+      duckDb: -10
+      duckFadeOut: 10
+      duckFadeIn: 20

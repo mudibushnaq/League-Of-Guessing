@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LOG Remote Scenes
+  m_EditorClassIdentifier: 
+  m_GroupName: LOG Remote Scenes
+  m_GUID: 43749f966f07f4c4fa9f2c932a8069f2
+  m_SerializeEntries:
+  - m_GUID: 62333a7969ab85949b9a30a12d483b24
+    m_Address: scenes/MenuScene
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LOGScenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3b88d3ddf726b6429a10708ea4def98
+    m_Address: scenes/Legacy_GameMode
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LOGScenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a71829b5326962942894abd1d15ce028
+    m_Address: scenes/QWER_GameMode
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LOGScenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb7247f859a7f594b8ee50da924ec6b5
+    m_Address: scenes/Portrait_GameMode
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LOGScenes
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e6a97d667cdbf2f419b5844a2355ebdb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ae2591ee02a213046817a36abcbf9c03, type: 2}
+    - {fileID: 11400000, guid: 8b35ce1547de0c940b6fd1f4eda9951f, type: 2}

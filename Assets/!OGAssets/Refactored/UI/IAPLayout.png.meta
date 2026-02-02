@@ -1,0 +1,659 @@
+fileFormatVersion: 2
+guid: df7f1e6e682c22f41a2722a2c5b854e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5076463587851896769
+    second: IAPLayout_0
+  - first:
+      213: 1601210567111175361
+    second: IAPLayout_1
+  - first:
+      213: 8552174257142092429
+    second: IAPLayout_2
+  - first:
+      213: 6843955727928468800
+    second: IAPLayout_3
+  - first:
+      213: -975593075990196819
+    second: IAPLayout_4
+  - first:
+      213: -6194854772957708926
+    second: IAPLayout_5
+  - first:
+      213: 1223255241379079231
+    second: IAPLayout_6
+  - first:
+      213: -202402343417816411
+    second: IAPLayout_7
+  - first:
+      213: -189451106576383818
+    second: IAPLayout_8
+  - first:
+      213: -877437677998121239
+    second: IAPLayout_9
+  - first:
+      213: -7730354899262223185
+    second: IAPLayout_10
+  - first:
+      213: 5597881030861325274
+    second: IAPLayout_11
+  - first:
+      213: -7144733625265059035
+    second: IAPLayout_12
+  - first:
+      213: -2160168189705978106
+    second: IAPLayout_13
+  - first:
+      213: -7786808529051807264
+    second: IAPLayout_14
+  - first:
+      213: -7210780769247915065
+    second: IAPLayout_15
+  - first:
+      213: -8077417698794258692
+    second: IAPLayout_16
+  - first:
+      213: 9198995692196630907
+    second: IAPLayout_17
+  - first:
+      213: -4019423639186653235
+    second: IAPLayout_18
+  - first:
+      213: -5827717545806647700
+    second: IAPLayout_19
+  - first:
+      213: -6335876983385356012
+    second: IAPLayout_20
+  - first:
+      213: -1759692865383661590
+    second: IAPLayout_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IAPLayout_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 512
+        width: 452
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 60, y: 60, z: 60, w: 60}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c70e15acb8337640800000000000000
+      internalID: 5076463587851896769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 894
+        width: 433
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 25, z: 25, w: 25}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc6347f684a83610800000000000000
+      internalID: 1601210567111175361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_2
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 844
+        width: 436
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82d13eec2d6fa670800000000000000
+      internalID: 8552174257142092429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_3
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 727
+        width: 159
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 27, y: 27, z: 27, w: 27}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0452da5497d9afe50800000000000000
+      internalID: 6843955727928468800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 699
+        width: 115
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad064c244ff572f0800000000000000
+      internalID: -975593075990196819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_5
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 700
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28df8bed764770aa0800000000000000
+      internalID: -6194854772957708926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_6
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 576
+        width: 225
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34e8043920e9f010800000000000000
+      internalID: 1223255241379079231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_7
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 589
+        width: 157
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 38, z: 40, w: 40}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aadfda142ce03df0800000000000000
+      internalID: -202402343417816411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 320
+        width: 451
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 60, y: 60, z: 60, w: 60}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eed06aa417b2d3f0800000000000000
+      internalID: -877437677998121239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_10
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 460
+        width: 225
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac46c12d2348b490800000000000000
+      internalID: -7730354899262223185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_11
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 340
+        width: 225
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad30363832bafad40800000000000000
+      internalID: 5597881030861325274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_12
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 345
+        width: 158
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 40, z: 40, w: 40}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b894b4f9ec8dc90800000000000000
+      internalID: -7144733625265059035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 464
+        width: 158
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 40, z: 40, w: 40}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ff97df97a8502e0800000000000000
+      internalID: -2160168189705978106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 60
+        width: 30
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e192eb26e2bfe390800000000000000
+      internalID: -7786808529051807264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 194
+        width: 366
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 25, z: 25, w: 25}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c392cf38192eeb90800000000000000
+      internalID: -7210780769247915065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_16
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 239
+        width: 118
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 25, z: 25, w: 25}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe3ae0266f37ef80800000000000000
+      internalID: -8077417698794258692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_17
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 239
+        width: 106
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 25, z: 25, w: 25}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b719abbf7d569af70800000000000000
+      internalID: 9198995692196630907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_18
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 239
+        width: 110
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 25, z: 25, w: 25}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfb878fe732838c0800000000000000
+      internalID: -4019423639186653235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IAPLayout_19
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 60
+        width: 366
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e22e6c4c9cf1fa0800000000000000
+      internalID: -5827717545806647700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 460adacf8d909a148b26bcbc6d717c6b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IAPLayout_0: 5076463587851896769
+      IAPLayout_1: 1601210567111175361
+      IAPLayout_10: -7730354899262223185
+      IAPLayout_11: 5597881030861325274
+      IAPLayout_12: -7144733625265059035
+      IAPLayout_13: -2160168189705978106
+      IAPLayout_14: -7786808529051807264
+      IAPLayout_15: -7210780769247915065
+      IAPLayout_16: -8077417698794258692
+      IAPLayout_17: 9198995692196630907
+      IAPLayout_18: -4019423639186653235
+      IAPLayout_19: -5827717545806647700
+      IAPLayout_2: 8552174257142092429
+      IAPLayout_3: 6843955727928468800
+      IAPLayout_4: -975593075990196819
+      IAPLayout_5: -6194854772957708926
+      IAPLayout_6: 1223255241379079231
+      IAPLayout_7: -202402343417816411
+      IAPLayout_9: -877437677998121239
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

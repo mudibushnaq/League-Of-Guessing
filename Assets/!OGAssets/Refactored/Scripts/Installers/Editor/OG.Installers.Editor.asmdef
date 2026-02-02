@@ -1,0 +1,19 @@
+{
+    "name": "OG.Installers.Editor",
+    "rootNamespace": "OG.Installers",
+    "references": [
+        "GUID:bae52294cc2f44de68f7c02e596b6688",
+        "GUID:8dea9c1d870ee457b9021915b0877201"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

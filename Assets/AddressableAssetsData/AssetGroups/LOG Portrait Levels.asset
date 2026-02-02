@@ -1,0 +1,1025 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LOG Portrait Levels
+  m_EditorClassIdentifier: 
+  m_GroupName: LOG Portrait Levels
+  m_GUID: c28b4e2ac38d99f45b9054c4ee5e17e9
+  m_SerializeEntries:
+  - m_GUID: 06f511f643184ca41a477a7b60f17651
+    m_Address: Portrait/Blitzcrank
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 075d7ba111286c84eaee3347eacf5930
+    m_Address: Portrait/Garen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08117892ac9b5ac4d98eea8685aec5e5
+    m_Address: Portrait/Thresh
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09a6529b14a32ed4c9ce7e4527b8fbf7
+    m_Address: Portrait/Rumble
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d0be0ab2be18b142a5981c6bae2d3b8
+    m_Address: Portrait/Galio
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d7f970842955844d990d85e36407969
+    m_Address: Portrait/Zoe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0eff1ff71e23b6440bd7942cb7655187
+    m_Address: Portrait/Yunara
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1064e405db9c30742b8f718a4978690c
+    m_Address: Portrait/Jinx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 10738fcfb84c003418c008f68455ad83
+    m_Address: Portrait/Soraka
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11d2d70e6ff5fcd49a4ab0659a68d16f
+    m_Address: Portrait/Ekko
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14aa309a4eb03a44498df2a01d82c444
+    m_Address: Portrait/Braum
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 163155f998c6e1744a15768ecb5b6bfd
+    m_Address: Portrait/Sylas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16d2072db30fb814b97666152219db48
+    m_Address: Portrait/Evelynn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1830fc84a85984a46a3f3030cae0dc04
+    m_Address: Portrait/Riven
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 187d284fb235da24ab37d90f4b70a680
+    m_Address: Portrait/Senna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19d567577c434cf44aa5dccfb7decb6e
+    m_Address: Portrait/Jarvan IV
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a0c1129b6f95ce40a4520e77cc22ee6
+    m_Address: Portrait/Shen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a4bcd88ac70dcd45acc7bc4ce13ad1d
+    m_Address: Portrait/Zilean
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e713132f345ccf418f4e30cb57f1199
+    m_Address: Portrait/Twitch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 227ec1e6641bf2f479bc225ab8219d54
+    m_Address: Portrait/Lulu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 237cc6fe8305b50459e71bc48dfc542b
+    m_Address: Portrait/Renekton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 244cca86e4fef1e48ab7df455c9409d9
+    m_Address: Portrait/Syndra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26833a2361e0e594f90127a09f824aa9
+    m_Address: Portrait/Fiora
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27dcd15ea0e5b9e41b1645e815012065
+    m_Address: Portrait/Bard
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 281549f3d0abe1d429f368e0a23b3990
+    m_Address: Portrait/Mordekaiser
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 295a765216ea4ad4eb934321a15f982c
+    m_Address: Portrait/Maokai
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2aba75090a60fa84d9d2df8dc80945c7
+    m_Address: Portrait/Malphite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2bebadf9251052b45b0c3e2608a8da26
+    m_Address: Portrait/Lee Sin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c2f3beb7c54b424ea0479ddcd6a87f1
+    m_Address: Portrait/Kayle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cc8753acce91a5498723ee2896d04c4
+    m_Address: Portrait/Yone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e8307eb764dc2a42b724158108e0ff0
+    m_Address: Portrait/Qiyana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3043ff4b6d2b0b541a4ddf0f8e718e45
+    m_Address: "Portrait/Bel\u2019Veth"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31238a96b74855142a1aba85135602c0
+    m_Address: Portrait/Alistar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 326d059dc2bc1d540b0771e261f06db7
+    m_Address: Portrait/Elise
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34591c9e6d414b34e87c7061cb9ae948
+    m_Address: Portrait/Janna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 353dd03cbf454934eabf8066ae25f1b6
+    m_Address: Portrait/Nasus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35de3e221af66aa439a782363587342f
+    m_Address: Portrait/Vex
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39435b913ca7a204699fbc0fdf067c6f
+    m_Address: Portrait/Xin Zhao
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a08261b0d832b843a37f58624fc7cf6
+    m_Address: Portrait/Kha'zix
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b052e38542149648a55d5ee4b9c0da3
+    m_Address: Portrait/Zeri
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3befb625f36448949b7683eec010f476
+    m_Address: Portrait/Ezreal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3dbb9ce43651a654f88ef1233e5fdf2d
+    m_Address: Portrait/Naafiri
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 448e657686b0e8c40877534938d42365
+    m_Address: Portrait/Lucian
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 44d37b464e5fe0d45b2a3471c64efb59
+    m_Address: Portrait/Olaf
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 462eb4bc8e0a0034b80c6955e5c413ba
+    m_Address: Portrait/Yasuo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 466e5fbd2ef0c7541b3d9135d5197c29
+    m_Address: Portrait/Gwen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47e124d7327d5c24ca4993ac7b87cf37
+    m_Address: Portrait/Aphelios
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4886879c54e5dc44dbeb7efdc134f151
+    m_Address: Portrait/Master Yi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a677d4c9d1186e43843200ce0514f1a
+    m_Address: Portrait/Akali
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a9af085be3da6443b978b66c946b526
+    m_Address: Portrait/Rammus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bb63b4825b986844a2a9124179adebc
+    m_Address: Portrait/Renata Glasc
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4de478d83ea611c4184b837307b730d4
+    m_Address: Portrait/Ashe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f7363c7939f30c4caa9968365c1e6a0
+    m_Address: Portrait/Morgana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5135572bd0285a34992018f969139c74
+    m_Address: Portrait/Sivir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 536b6f9da776b27438d5d270e8abffe6
+    m_Address: Portrait/Camille
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5691901d26bbad74dbaeaadc8c493067
+    m_Address: Portrait/Caitlyn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ab36d4e5d390e447b8ce857b2fdbc8a
+    m_Address: Portrait/Zyra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 608675a192658874da434d120eb7f729
+    m_Address: Portrait/Millio
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61fd1c8413a1718439214c04522a4fb7
+    m_Address: Portrait/Anivia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62cd6d700e963b947904904d8b7dc0b8
+    m_Address: Portrait/Kayn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6743e679617c37048b7bd9fa82cc9153
+    m_Address: Portrait/Neeko
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6775c27817441ef4e9a7928fee81fed4
+    m_Address: Portrait/Ahri
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67bb95f50ccc22b46b99a1d57283c314
+    m_Address: Portrait/Nunu & Willump
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 682851f011be3084d839a257229d1727
+    m_Address: Portrait/Karthus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6885a475ac49cca4280220a42dfd1845
+    m_Address: Portrait/Smolder
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69096be25fe08174cac8ec5f58d08818
+    m_Address: Portrait/Brand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a7a0404e688e504e9ae78e60a289357
+    m_Address: Portrait/Mel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7370dcff7bacf0c4eb3a4eaad80b78eb
+    m_Address: Portrait/Nami
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 754ffaf892e915e45bf6972a5b5e5799
+    m_Address: Portrait/Ambessa
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7652f5f2c17261641b0a1329144b8964
+    m_Address: Portrait/Samira
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76c659ece62426343ae6df95d97ed882
+    m_Address: Portrait/Vayne
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 780a4b2125c667f4a94092c05101fdd2
+    m_Address: Portrait/Azir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7949a689ba37ec74e9104a4cc7982aed
+    m_Address: Portrait/Tryndamere
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ddb505f42d1f8a408fb33b2fbeb1582
+    m_Address: Portrait/Hwei
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83dcbc15472506f4998e69b12ca38caf
+    m_Address: Portrait/Sion
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8417da08a75ab1a4cbca90a213ba6c3a
+    m_Address: Portrait/Sett
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 851d22370d0b378489bab97e3f2513e7
+    m_Address: Portrait/Vel'koz
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 862d054b3c15a0440aecf23c1fc3997d
+    m_Address: Portrait/Illaoi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87307a7e51d06aa438c5f5ae000a0230
+    m_Address: Portrait/Malzahar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bc1bbb06dd2a56418a6edce48efffc5
+    m_Address: Portrait/Udyr
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bc718d0046a670418208d5cfd35e425
+    m_Address: Portrait/Ornn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90757c20193415e44b97741f4022bc55
+    m_Address: Portrait/Fiddlesticks
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 908028c450a671846bab5a12f1faa86c
+    m_Address: Portrait/Warwick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90ca77cca05ca494db5d31fc528ce8e9
+    m_Address: Portrait/Kennen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90f47ac16111b61418dc62084402e7d2
+    m_Address: Portrait/Skarner
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 917da37e556245345bf40f27cba76d9b
+    m_Address: Portrait/Kassadin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91cdca8e5c836e84d823fa73d0723533
+    m_Address: Portrait/Zac
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96307302500dc7f49b29468d86480e7a
+    m_Address: Portrait/Darius
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9631e9aa5a2b86c4e9418872f4e1be0f
+    m_Address: Portrait/Jhin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96bed2cdb5ab0714d9a6b5dff8870d78
+    m_Address: Portrait/Poppy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 994aac38a57b64a44bed0232ef34fcec
+    m_Address: Portrait/Pantheon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b5ff0d790d105f49a69d7aebcc2c82e
+    m_Address: Portrait/Varus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d23087aed54e354fac9f0693fec2d83
+    m_Address: Portrait/Talon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d68fa4b325a93248a3e570f63136b77
+    m_Address: Portrait/Volibear
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fa3a1b8a3d69c843ab97645b014a9a5
+    m_Address: Portrait/Viktor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a11e463f6652acc42aee118e72e1ad3f
+    m_Address: Portrait/Aurora
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1cac0c594c841d47becf01dbb711c89
+    m_Address: Portrait/Nidale
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a370908dce5dbc047aa053a0f6c08d54
+    m_Address: Portrait/Corki
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a76423ab621d9ab48b990ea1d21fa293
+    m_Address: Portrait/Tahm Kench
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8d7a8091854d7c4cac05a2896c81a33
+    m_Address: Portrait/Nocturne
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8eef0cbc5ba11944bfb16a3ed1942e0
+    m_Address: Portrait/Nilah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9350121fd171444ca854d19138d0707
+    m_Address: Portrait/Dr
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9fcf9e4be146a545b13b4a59e397d8b
+    m_Address: Portrait/Briar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa36bebfa7cfb6441b45f09096a18005
+    m_Address: Portrait/Ryze
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab07185f32ad4fc4fbd9fdf761df1352
+    m_Address: Portrait/Aatrox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab26bcd80105a834d9ad4a91c1619842
+    m_Address: Portrait/Gnar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acbcb6efa918624489ea5205b3d1ddba
+    m_Address: Portrait/Wukong
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad7010f6461eb234d949f37c068064e4
+    m_Address: Portrait/Taliyah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af794d3d08720fd4895c9f3f1f0251f9
+    m_Address: Portrait/Graves
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b09409e50b4226740b12cc74a99556c2
+    m_Address: Portrait/Seraphine
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b21e5c9049c828c49b86e26f064b6be9
+    m_Address: Portrait/Jayce
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b2c0d59992930814f9f566c3a527d2d1
+    m_Address: Portrait/Hecarim
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b31147a0e022c304e8540557722b64ba
+    m_Address: Portrait/Akshan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b502bff3a471b014d9bef003d53aa1d2
+    m_Address: Portrait/Cassiopeia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b51e2377df9d5ac41a42b1f220b53f9a
+    m_Address: Portrait/Kai'sa
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b69a1cb2f3dc4b54882ed4f041214fe9
+    m_Address: Portrait/Karma
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba5db1939a920094f982ea0d53d2d191
+    m_Address: Portrait/Kindred
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bafb4360de060614191711118caeaae4
+    m_Address: Portrait/Katarina
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bcdb4c10916a52145b8459a4324b8eaa
+    m_Address: Portrait/Orianna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c067c05bdc7831947b92ebee5bfc56a2
+    m_Address: Portrait/Leona
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3792191f36afe14196cc5d125b71410
+    m_Address: Portrait/Shyvana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c444559b7a3e54b46bea9c75bd042e86
+    m_Address: Portrait/Cho'gath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7a6f740c2fa60d4ea24a628faaa37e3
+    m_Address: Portrait/Heimerdinger
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9e6dead16dd312449ff736c8ea52eb4
+    m_Address: Portrait/Rengar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb3115046cad73c488d48a370701e8f0
+    m_Address: "Portrait/Rek\u2019sai"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ccb30b7975e3bfd498019789c8858d96
+    m_Address: Portrait/Diana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2a5ba919058c82458949e817ada8e45
+    m_Address: Portrait/Gangplank
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d331555e2fe07064fa0eeeead694fa4d
+    m_Address: Portrait/Kled
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6704307ec2115243ad6edc4061d72eb
+    m_Address: Portrait/Rakan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6f736ebc49812046be14c1b9aac7e88
+    m_Address: Portrait/Nautilus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d81d726a7882cc74884fc0d38d357db2
+    m_Address: Portrait/Irelia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d98639993a0bb544da9a8791125fc354
+    m_Address: Portrait/Zed
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc52c7736d67850418d9332352f6ba32
+    m_Address: Portrait/Trundle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dce17a11a89f28d4ba198a3cf4a0850d
+    m_Address: Portrait/Vi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd2d72008a1a7a24fa4390717e7b428e
+    m_Address: Portrait/Miss Fortune
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de61c0f7464df0c45a834c653e8c24d8
+    m_Address: Portrait/Shaco
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dec8b958911b72447a5a0bc5cfa680f0
+    m_Address: Portrait/Teemo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df72ce951fe643140944c5e6f0e8cb1f
+    m_Address: Portrait/Yuumi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfecadef8fc798f4cb012c55cf45d035
+    m_Address: Portrait/Lissandra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0ab4d1698cb37d41b01d2d51252bda6
+    m_Address: Portrait/Annie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e237ab2a00bd72a4c9a21e1ba7deec01
+    m_Address: Portrait/Lux
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2839da7590542b40a6567b0638a3f50
+    m_Address: Portrait/Veigar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2fc1dae100a4cb40a0c5358ca7cfaff
+    m_Address: Portrait/Pyke
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e30dad28a1e13d840970b5260b6d3377
+    m_Address: Portrait/K'sante
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e31054dd6482d17428694103e1d97146
+    m_Address: Portrait/Draven
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3617cf32b6bc0f41b0ea71f5136a422
+    m_Address: Portrait/Lillia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e48a1881a6c6f704b8102ab2d39bcab2
+    m_Address: Portrait/Zigs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6ac1e191be38d444981cb5e0808b1f7
+    m_Address: Portrait/Twisted Fate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e748cdb7138022e4c8e2fa7a7c7dcda3
+    m_Address: Portrait/Swain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea9e4d462a0ffc14690406a4c3a5f55b
+    m_Address: Portrait/Xerath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ead3781e8f8112b42ab21273042b1678
+    m_Address: Portrait/Gragas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebd432ee1c6dfa0429f492fce3789b58
+    m_Address: Portrait/Quinn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec03925d18be43a40a132eab7d1a1e9b
+    m_Address: Portrait/Amumu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec8a93fb1f4ae4a40adb0c463feba3a9
+    m_Address: Portrait/Sona
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eca9ae0293c871e42ad22ac8734c7886
+    m_Address: Portrait/Fizz
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ecfb579eb4b4e32489a391f62d7a5d4b
+    m_Address: Portrait/Tristana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed4d01ebadfe424408ed972eabc1dfd0
+    m_Address: Portrait/Kog'maw
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef54675150fd7ea4c8d6be7485d0027c
+    m_Address: Portrait/Yorick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef7d30e1a62afc941a628b679cc561c4
+    m_Address: Portrait/Jax
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0db18f8e1667fb49a8ed709d4136ebb
+    m_Address: Portrait/Mega Gnar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f17c5d667a7d2d441b48689a55910ae9
+    m_Address: Portrait/Vladimir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f62a396c075d3ae40b5295a8f0040227
+    m_Address: Portrait/Viego
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f69df7f975b02884c946a102d50fff7b
+    m_Address: Portrait/Rell
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f854292e541d90d4badcad7c7de6ee58
+    m_Address: Portrait/Kalista
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc954dfbca5d40a4bbbcafc8b3edbed3
+    m_Address: Portrait/Xayah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd6b799cb5fa3754882eeceb73cfeffd
+    m_Address: Portrait/Aurelion Sol
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff23118db75b9fe498c8d7628a35b3a3
+    m_Address: Portrait/Ivern
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogPortrait
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e6a97d667cdbf2f419b5844a2355ebdb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d5c44b48b82c4a64d8051ae6ff654934, type: 2}
+    - {fileID: 11400000, guid: a5b993b6c2c824c4cadf033d31498955, type: 2}

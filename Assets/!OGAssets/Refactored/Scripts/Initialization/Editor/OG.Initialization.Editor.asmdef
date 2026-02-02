@@ -1,0 +1,19 @@
+{
+    "name": "OG.Initialization.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b18db9a120ad82f4ba5f90ce0f2512d2",
+        "GUID:8dea9c1d870ee457b9021915b0877201"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

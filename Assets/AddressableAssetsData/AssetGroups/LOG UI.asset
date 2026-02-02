@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LOG UI
+  m_EditorClassIdentifier: 
+  m_GroupName: LOG UI
+  m_GUID: 597da17b02e33f743becf13d9384a286
+  m_SerializeEntries:
+  - m_GUID: aa590118b22e7b1469f7f23cdaa59a85
+    m_Address: uipopupVictory_View
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7ee62fc2aefec14488a465efec95df7
+    m_Address: uiTopBar_View
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9ff5ad8d316edb4f85ebe0e217b65e2
+    m_Address: ui/popup/NotEnoughKeys_View
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e6a97d667cdbf2f419b5844a2355ebdb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 176f7ea265040454fa532c60e40fe16a, type: 2}
+    - {fileID: 11400000, guid: d3aa38154d13a2b4a8998449d2357245, type: 2}

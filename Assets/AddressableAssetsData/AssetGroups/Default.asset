@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  m_GroupName: Default
+  m_GUID: 3dd26a23ecdf2864a9a891185a9504d5
+  m_SerializeEntries:
+  - m_GUID: 084add3577072484093694f0621d5c7b
+    m_Address: Friz Quadrata Regular
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a56c3c5def87cf047beb832bf5257b63
+    m_Address: ShinyFX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c85974fdfecc15940bdbd104907746cb
+    m_Address: Friz Quadrata Regular SDF 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db76a7109bf66fd41ba25c7bcd903030
+    m_Address: ShinyFX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df3267a1cf42fbc458ffed8b15963ce2
+    m_Address: Friz Quadrata Regular NoOutline
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2cc61e6ccf7147228a514f91239da93
+    m_Address: Friz Quadrata Regular SDF
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e6a97d667cdbf2f419b5844a2355ebdb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3417a96729fe8e84f8331eee6f35c48c, type: 2}
+    - {fileID: 11400000, guid: ca9d889da1b75c64ba4221ca2d35ec20, type: 2}

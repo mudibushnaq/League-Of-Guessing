@@ -1,0 +1,839 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LOG Legacy Levels
+  m_EditorClassIdentifier: 
+  m_GroupName: LOG Legacy Levels
+  m_GUID: 0a133b26977084f46b6c37a8036a6c63
+  m_SerializeEntries:
+  - m_GUID: 005493b1c9771f0408210849e784dc61
+    m_Address: Legacy/Kled
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 009fce6e06659904ca616d030020dd1b
+    m_Address: Legacy/Cassiopeia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 057200357e1e44246a3084c1c575c67a
+    m_Address: Legacy/Vladimir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0850d99ccaadb594eadc7fb893e50823
+    m_Address: Legacy/Garen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09454b93e8279cc4b95cb655a237fe5c
+    m_Address: Legacy/Varus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a1448ab58dcad742bf18b8623efc68e
+    m_Address: Legacy/Yorick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c4aaa90cbb0da34aa2ccfbfbf0ba506
+    m_Address: Legacy/Sona
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f4e16ffef085784d990dc39950b09db
+    m_Address: Legacy/Fizz
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f6e2244c0a3213488d9150b460b2bf8
+    m_Address: Legacy/Warwick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11fd19516b6b27a4fb62077fad649930
+    m_Address: Legacy/Darius
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 149948833e6c2a441a215f5765619e84
+    m_Address: Legacy/Gragas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14e5e0126231af043b7885e6cbc145a6
+    m_Address: Legacy/Miss Fortune
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 154fa0cf922e31443ae400f16257d722
+    m_Address: Legacy/Sion
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15939fdaeb8e7ee4889284f3e2922d98
+    m_Address: Legacy/Bard
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17fac9cf6580bbc4d98e9453d32669e9
+    m_Address: Legacy/Olaf
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c18dff63492fc8459bf38bbf1b8fdc8
+    m_Address: Legacy/Camille
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c78c21c1e7707f49964ff0e655dd528
+    m_Address: Legacy/Shen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d5777f954f8b114d90c042f34b6975b
+    m_Address: Legacy/Janna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f0b5123eddf5ea4ab2601d92d8b3555
+    m_Address: Legacy/Ezreal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f147fc4864a70646b01ee2db8dd58cb
+    m_Address: Legacy/Kha'zix
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21ee91f17e455b447903e9e81251b6a7
+    m_Address: Legacy/Nidalee
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2296d2da10a7c794fa7d597db0aee281
+    m_Address: Legacy/Syndra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25e9a5b62d41fe94682348fc72ab381b
+    m_Address: Legacy/Jax
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 265a064c1240ec94ebd773705fb97e1a
+    m_Address: Legacy/Xerath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2677bbc5fcd3f564db89573a43323013
+    m_Address: Legacy/Urgot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28baef28d7b55ce4199f1a21c8c22f89
+    m_Address: Legacy/Fiddlesticks
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a01ea9525e89e44787c35182b6df887
+    m_Address: Legacy/Viktor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a936b6061fb3c940981270b25656464
+    m_Address: Legacy/Soraka
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ac5cfe93b9e4ea4eb983f1fc7fd8432
+    m_Address: Legacy/Graves
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b21bde777ffe6f45b2b413cb2e6b2b0
+    m_Address: Legacy/Swain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e40647621939aa49af6f6826f45bf19
+    m_Address: Legacy/Taliyah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e692bb24bbaea6489a2d89c216df703
+    m_Address: Legacy/Lissandra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3027908cbafc2ff459bd57dd56fca352
+    m_Address: Legacy/Quinn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 302c4d0545730544cb5795a2c27e5305
+    m_Address: Legacy/Lux
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 32680ec6a187a5c47aae38b9b629b035
+    m_Address: Legacy/Braum
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 332b15c664df77b4a939e2fb63a046a0
+    m_Address: Legacy/Kalista
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 338d21f1549263c43967b1ec324bcd49
+    m_Address: Legacy/Singed
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 388e19fcd89adcb4b9809647185b4165
+    m_Address: Legacy/Cho'Gath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38e2668d3c17d68458c079cc5773b36d
+    m_Address: Legacy/Mordekeiser
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b63326bef9fc9d48bcf57ccc87f133d
+    m_Address: Legacy/Thresh
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b63a9c2a470b9d4a83919c7dfc1d045
+    m_Address: Legacy/Evelynn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c2ee343fdba2584cb3502b32f33f837
+    m_Address: Legacy/Heimerdinger
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40767e6436dee1641a6dbc737b61ed75
+    m_Address: Legacy/Ryze
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41439caebb7966947a622c698f6bd1c9
+    m_Address: Legacy/Vi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4476eebda88f37d40a32cb8430d1ea0a
+    m_Address: Legacy/Jayce
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ad5b7db1867fd54d86cb34cd68398d2
+    m_Address: Legacy/Azir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bc5447f56717e341b98965e638ee94b
+    m_Address: Legacy/Shaco
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4beb9fce156b8414bb6809ecafd8997a
+    m_Address: Legacy/Annie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f713f09b485ca94c9310dd36f7c0c6b
+    m_Address: Legacy/Tristana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 514fcebf16e575c449f8c6af5543d74f
+    m_Address: Legacy/Fiora
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 587d56aa98c95e148810de6cbc9a960d
+    m_Address: Legacy/Corki
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 594553312f0ed4746af9423799ebc497
+    m_Address: Legacy/Nunu & Willump
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60df65b2ab9e9fd49a4daa4c5c48d2df
+    m_Address: Legacy/Hecarim
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61321f7b2ef2848439c77169a4429129
+    m_Address: Legacy/Tryndamere
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65bd22b4c0785f043aa5c84355c7c793
+    m_Address: Legacy/Rek'sai
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b1b6e5247753bb4a89493eb02bec39f
+    m_Address: Legacy/Skarner
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d841e691ecb6e143b8e848002781a03
+    m_Address: Legacy/Veigar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6de3f6f69d6016d46b22501054a7a57c
+    m_Address: Legacy/Galio
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 706d7fd9e62287a4fba3dd377f147d85
+    m_Address: Legacy/Ashe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71858f2b6e4cd2b468d001809e661a14
+    m_Address: Legacy/Trundle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7297a4d04575ec442926a775710259cc
+    m_Address: Legacy/Illaoi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7579e0d0ec133ee42afa7e1c51a74ff1
+    m_Address: Legacy/Jarvan IV
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77b29fb280339224db9cb911b3030681
+    m_Address: Legacy/Yasuo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77bd637a9faf30f439fadbb8aed4ec74
+    m_Address: Legacy/Dr
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 793dddf60fb3d44489adc3525720b314
+    m_Address: Legacy/Zed
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c46605962ede5446a315200cb9ba3d3
+    m_Address: Legacy/Zac
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7cd25d0668d6a4649bc438a5d61f8361
+    m_Address: Legacy/Poppy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7dae761b0062c1647bc503a0cd06b763
+    m_Address: Legacy/Gnar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e80aec7c30ef3548a35ded08eae1e48
+    m_Address: Legacy/Ahri
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 807cc70335219364aa2394ad340c9bc2
+    m_Address: Legacy/Udyr
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80f293913b2fbea45b7191bfaa9d57e9
+    m_Address: Legacy/Rakan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86be78e360237e94191c96e1b6dcd5bd
+    m_Address: Legacy/Zyra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88deb31056e9bef4cb2c795d0a6a6b81
+    m_Address: Legacy/Nasus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cbe407e0718bc040b5ffd73e28288e8
+    m_Address: Legacy/Orianna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d84f8afade6f744c9b32f6115e35d5b
+    m_Address: Legacy/Amumu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e862653725009145b08c9017204b051
+    m_Address: Legacy/Katarina
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8edb908a0c31ed340af0dc74ee0e75a9
+    m_Address: Legacy/Nami
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90160ef9ef6789c4fa7915427ca857c8
+    m_Address: Legacy/Volibear
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92a093087b52dcd4f89be43917ce70d8
+    m_Address: Legacy/Xayah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92d1294290fd60b459232d2e0a11fac1
+    m_Address: Legacy/Karthus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97078adc9b7b0094ba6ceffa55d5ac1d
+    m_Address: Legacy/Aatrox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99907735585a70a4cac43c6e3f9a01ba
+    m_Address: Legacy/Rengar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b8a7ee1ca0b200409dd0609c5794bfc
+    m_Address: Legacy/Sejuani
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c2b983e58c0af142918778fd470cb16
+    m_Address: Legacy/Malphite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9caa463528e22b5478ed92b95d012eef
+    m_Address: Legacy/Diana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2aaade2934859846b225e439e8e83a6
+    m_Address: Legacy/Caitlyn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6d14dc8f496d1145819a338494cda8f
+    m_Address: Legacy/Vel'koz
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a78dde88c8cc79b44bd631966e591fc6
+    m_Address: Legacy/Riven
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a99d8c5cf19bbec49815dbcb1a85edfc
+    m_Address: Legacy/Irelia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac7ac90154e8f4947931f6894326d8d0
+    m_Address: Legacy/Talon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae248e66886537d43a5c95e2529577f5
+    m_Address: Legacy/Morgana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1783c9069b3bc54cac31a98b57e6912
+    m_Address: Legacy/Zilean
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b52a6eb8a7cd7e340a95db8fdc231502
+    m_Address: Legacy/Sivir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc327f1fe4ed13d41aa5d96e2cfc46ae
+    m_Address: Legacy/Kennen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc4fc8dbfca30ea479b7277d39e8cf2a
+    m_Address: Legacy/Malzahar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bcd56d8ca7e14464f85f2db18abf4940
+    m_Address: Legacy/Teemo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: beac70c68a4791947b3fb2da74e8ecca
+    m_Address: Legacy/Taric
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0dc72df29816d04c8e65a618dad1781
+    m_Address: Legacy/Kindred
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c39e4cbff5de4d84c8d78ba06e12f87b
+    m_Address: Legacy/Shyvana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c403063b7d5924741b99916366f2b1c2
+    m_Address: Legacy/Jhin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c688eef41e0da0f4baaee48fdbef312d
+    m_Address: Legacy/Lucian
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6a3ffc70de17404890faa426b1b6178
+    m_Address: Legacy/Karma
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca6627e1105d1e940bbd1bcb64c11fce
+    m_Address: Legacy/Akali
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb147fbd0706da04eb36461645960904
+    m_Address: Legacy/Twisted Fate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc56e01c27c1c5942b1588a5dc913692
+    m_Address: Legacy/Kayle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdc5bceeb3915f04594ac09215b400f3
+    m_Address: Legacy/Kog'Maw
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d10129b5339890f4c8a332de1c56315b
+    m_Address: Legacy/Renekton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2cb84118f3767c4bb0a458c0248eb68
+    m_Address: Legacy/Brand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4cb5f9cab398e44591bb591eb30cb6c
+    m_Address: Legacy/Maokai
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5c1d2bc1051950419cf6dd1d3a10240
+    m_Address: Legacy/Jinx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d65afd0d31ddb9546ac1948efb7a03d3
+    m_Address: Legacy/Vayne
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6fe4ece9f6e8aa4b8458a7cd1b6eaa6
+    m_Address: Legacy/Nautilus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d72c953974a870d45905a03f2bd7158e
+    m_Address: Legacy/Rammus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7432892408a83444b18c06b70487b7b
+    m_Address: Legacy/Aurelion Sol
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d787326364923f446a848f059511416b
+    m_Address: Legacy/Lulu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d83837a2219583246bc08b28a3ac78a6
+    m_Address: Legacy/Nocturne
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d94622f83c259894fb4489a607df7150
+    m_Address: Legacy/Gangplank
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da6448060f5f5af429f7a5770cb1e982
+    m_Address: Legacy/LeBlanc
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da75c6fc9a9889042af1dd9004aecbb5
+    m_Address: Legacy/Ziggs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db81933b618bb7e4c866a70d5eb2a17b
+    m_Address: Legacy/Kassadin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df5f262b247d75944b0abc63e81c28e1
+    m_Address: Legacy/Twitch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e182bd296661e5242b1fc4b0840b1fa1
+    m_Address: Legacy/Draven
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e59ec57e7e5623c46a78e86183ef1bb7
+    m_Address: Legacy/Rumble
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7ef69130d22bc345981d4b21b2b5280
+    m_Address: Legacy/Ekko
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8845fa453c180f4394e45cec3717f48
+    m_Address: Legacy/Blitzcrank
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea01255de535e1f4da5535c67416d954
+    m_Address: Legacy/Leona
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea48b8627c0a31d45b0ede21db3d2b46
+    m_Address: Legacy/Xin Zhao
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3df23030369ea14d8654e865d6c649f
+    m_Address: Legacy/Anivia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4d6d19063add704b98f7f83280d6f8c
+    m_Address: Legacy/Pantheon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6f593d37287f0245aeacab9a51014bb
+    m_Address: Legacy/Alistar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6ff08343a5f6b54c96b3c47f6b6ea10
+    m_Address: Legacy/Ivern
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8fbe21ac52d9324bb8f03ca32e5b94d
+    m_Address: Legacy/Tahm Kench
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbfcfe507b9414d40a276c9f2efb3eec
+    m_Address: Legacy/Lee Sin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fdde7d12844077549823aeecf84b090e
+    m_Address: Legacy/Master Yi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe36c0188032c4f4683d462e667051b0
+    m_Address: Legacy/Elise
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fef495f391ec5c6499df404e2184c890
+    m_Address: Legacy/Wukung
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogLegacy
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e6a97d667cdbf2f419b5844a2355ebdb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fe19bda0df1597f40a2c9cff83eeff9a, type: 2}
+    - {fileID: 11400000, guid: 98c4eaae40185f94ab0b62cd24bf7086, type: 2}

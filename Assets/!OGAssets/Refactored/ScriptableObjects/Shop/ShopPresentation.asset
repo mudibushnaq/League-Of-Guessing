@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10f16708ea2b9754392229344c1ae4be, type: 3}
+  m_Name: ShopPresentation
+  m_EditorClassIdentifier: 
+  entries:
+  - catalogId: 100ip_pack
+    icon: {fileID: -299690340437171572, guid: 0d3f47f77a811f546a9fdd4a1b3a0cc6, type: 3}
+    badgeText: 
+    featured: 1
+    sortWeight: 1
+  - catalogId: 170ip_pack
+    icon: {fileID: -299690340437171572, guid: 0d3f47f77a811f546a9fdd4a1b3a0cc6, type: 3}
+    badgeText: 
+    featured: 1
+    sortWeight: 1
+  - catalogId: 240ip_pack
+    icon: {fileID: -299690340437171572, guid: 0d3f47f77a811f546a9fdd4a1b3a0cc6, type: 3}
+    badgeText: 
+    featured: 1
+    sortWeight: 1
+  - catalogId: 310ip_pack
+    icon: {fileID: -299690340437171572, guid: 0d3f47f77a811f546a9fdd4a1b3a0cc6, type: 3}
+    badgeText: 
+    featured: 1
+    sortWeight: 1

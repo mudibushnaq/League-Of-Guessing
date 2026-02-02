@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3731567494726687498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3083714965401994619}
+  m_Layer: 0
+  m_Name: sfxRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3083714965401994619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3731567494726687498}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2685830339301382479}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5483271819726279785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2685830339301382479}
+  - component: {fileID: 3090672631966719435}
+  - component: {fileID: 1041674894575612254}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2685830339301382479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483271819726279785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3083714965401994619}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3090672631966719435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483271819726279785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58053bf1971d41f499067432b238ba88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck_Default: 0
+  duckDb_Default: -8
+  duckFadeOut_Default: 0.12
+  duckFadeIn_Default: 0.25
+  duck_UI: 0
+  duckDb_UI: -6
+  duckFadeOut_UI: 0.08
+  duckFadeIn_UI: 0.18
+  duck_Gameplay: 0
+  duckDb_Gameplay: -6
+  duckFadeOut_Gameplay: 0.1
+  duckFadeIn_Gameplay: 0.22
+  duck_Voice: 0
+  duckDb_Voice: -12
+  duckFadeOut_Voice: 0.12
+  duckFadeIn_Voice: 0.3
+  duck_Priority: 1
+  duckDb_Priority: -14
+  duckFadeOut_Priority: 0.12
+  duckFadeIn_Priority: 0.3
+  mixer: {fileID: 24100000, guid: 4309b561cfb0ff847829de4fea9bb4a1, type: 2}
+  bgmGroup: {fileID: -5090655467487245821, guid: 4309b561cfb0ff847829de4fea9bb4a1,
+    type: 2}
+  sfxGroup: {fileID: 3597648786941844524, guid: 4309b561cfb0ff847829de4fea9bb4a1,
+    type: 2}
+  bgmParam: BGM_VOL
+  sfxParam: SFX_VOL
+  sfxLibrary: {fileID: 11400000, guid: f64d60d0bcb6dff44bee48a45f05611c, type: 2}
+  bgmLibrary: {fileID: 11400000, guid: 6bb5771e8c427df48a862a3b5f909da4, type: 2}
+  bgmA: {fileID: 0}
+  bgmB: {fileID: 0}
+  sfxRoot: {fileID: 3083714965401994619}
+  sfxPrefab: {fileID: 3143170780593167242, guid: a216aec4b8614ae46be0fcc890931898,
+    type: 3}
+  sfxPoolSize: 20
+  debugAudio: 0
+--- !u!81 &1041674894575612254
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483271819726279785}
+  m_Enabled: 1

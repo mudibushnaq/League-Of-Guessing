@@ -1,0 +1,1049 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LOG Default Levels
+  m_EditorClassIdentifier: 
+  m_GroupName: LOG Default Levels
+  m_GUID: a2981cf956488bc47b7032ea040219e1
+  m_SerializeEntries:
+  - m_GUID: 049dd58440e990d43b748a515b97b32c
+    m_Address: Default/Yone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05281d194ffb6e74c985011f1964e292
+    m_Address: Default/Ornn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 071068ec02a187e4fb9d9094022186d7
+    m_Address: Default/Seraphine
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07aca95a6091834459f081343b32a255
+    m_Address: Default/Nunu & Willump
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09d97bfa799658042862d86dbc1f860c
+    m_Address: Default/Gragas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09f0b66f9b48de44b9c4ec5b47f997eb
+    m_Address: Default/Rammus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d726c0f6d435274b89489d2032f00a2
+    m_Address: Default/Zac
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d80712985a2c0a4b802f153a6eb8602
+    m_Address: Default/Heimerdinger
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0da9a5edd47a26049a72ed146809b630
+    m_Address: Default/Tahm Kench
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0de961452889a6a44bc8a56a082f0d4a
+    m_Address: Default/Hwei
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12a3dd0dcea43f5429e83ed5be946e54
+    m_Address: Default/Lillia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14955f3bd17175d4aa9de97066640f22
+    m_Address: Default/Annie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 156587e483ae0f244ab8ecaca246488d
+    m_Address: Default/Xin Zhao
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16ced9210ab716f41808e57fcf7487fa
+    m_Address: Default/Trundle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b2eb8be9c28ab84c82e89396ecebe63
+    m_Address: Default/Jayce
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21c1a46c13cd80c4b850ffad0f41f6cf
+    m_Address: Default/Rumble
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2319dedb1c4b70b49af5046148fcda23
+    m_Address: Default/Gnar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 23c6c157a6802e74a9b44e62757490a4
+    m_Address: Default/Gwen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2411dec5a542ba7459b5822bbe22dec0
+    m_Address: Default/Twisted Fate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24bab3b3813350443b1c16d5bed5c72b
+    m_Address: Default/Kled
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28b6437e1eb1cb04bbc9669845418375
+    m_Address: Default/Jax
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28fe57efa3c7eca4794248664b722102
+    m_Address: Default/Renekton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29687bd2b8a06814299cc3a876eb1c97
+    m_Address: Default/Tristana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2de072a49b562d74da362ce18ddb620a
+    m_Address: Default/Rengar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 304c6889c0e1ab54da4f772abc2d91d6
+    m_Address: Default/Rell
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33f17ecb4a28f9049aa15890136cb8e8
+    m_Address: Default/Akali
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 353af13661f37f140bfe98434d33e77f
+    m_Address: Default/Miss Fortune
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a34782a8370cb64aa82c132ffe32fbf
+    m_Address: Default/Sylas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a3e10a91380a4641aab7484537650a1
+    m_Address: Default/Xayah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bc74bbbf21d6c7479cdd898ef687628
+    m_Address: Default/Cho'Gath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bd91c2bfae6aa54885a697eb49acad6
+    m_Address: Default/Kalista
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cf61526da26e62419b12ec4bfedbc44
+    m_Address: Default/Rek'Sai
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ed1bc2c8c89f754c8900cde32185df4
+    m_Address: Default/Senna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ee4e7da911f6014cadba3a07ca4c8dd
+    m_Address: Default/Yunara
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 454ef2433ea6dc84aad0c6e66c8f8d45
+    m_Address: Default/Zed
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45a1f6d288b64454b8558400a5d316ee
+    m_Address: Default/Darius
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45a2b1acb6d836d4b92f6978b6232ad8
+    m_Address: Default/Yuumi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 467bce277e15ed749a50618e72fd4eb2
+    m_Address: Default/Dr
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48b4b97c25c539f4dad498c5bd174e8b
+    m_Address: Default/Briar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4902a44705603f8418fa7de79866abed
+    m_Address: Default/Poppy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4975c70449e9e4f4289abbf62da5801e
+    m_Address: Default/Shyvana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ecebf44c1b0ff74d8988aa0b4014112
+    m_Address: Default/Maokai
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f4d208e578f20341ad44c2637c80a99
+    m_Address: Default/Diana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 501606ed88c529246b50af656d7cf419
+    m_Address: Default/Udyr
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 51186c2714984e14a95cb9dfc4fb90c6
+    m_Address: Default/Ashe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5363f2d18947b9348a8ada696e32a74d
+    m_Address: Default/Malzahar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55490d722d5098240a28fda7ec0810ff
+    m_Address: Default/Sivir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 559871f7a6179cf4481c7f1358bb2a92
+    m_Address: Default/Zeri
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57049143ce4896146a73f60bf3e0afc5
+    m_Address: Default/Vel'Koz
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57811043f8401dc449ad109a2b3f4831
+    m_Address: Default/Azir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 593f60de22064444b9a978615822c06a
+    m_Address: Default/Tryndamere
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c0a88f4fb287b544885ccce7f09768b
+    m_Address: Default/Amumu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cc06de18d7187f4380b6fb24b19a9cf
+    m_Address: Default/Nasus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5da445002ae8be749ac51ad65f0088fb
+    m_Address: Default/Karthus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ebde09826c1db24d8e9c51ef5923ff0
+    m_Address: Default/Zoe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f5b57ef7f8df344b9a0f6ad8e9144e3
+    m_Address: Default/Pyke
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60f6d2243f9d68143a083c405881b4fd
+    m_Address: Default/Syndra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 617c835f312f66d499c2a2aa2a30e2f8
+    m_Address: Default/Katarina
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6195e7e907937cb45a620ea780db98de
+    m_Address: Default/Swain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61bb7b2bd6cbc114b8e11a192c337085
+    m_Address: Default/Lulu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61f16ae479199fa47a336f1b8eeb4bb6
+    m_Address: Default/Hecarim
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 655e78fe76f687c4aa13bb703786ae2c
+    m_Address: Default/Olaf
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65e6820a79a27234c972610c019e1a77
+    m_Address: Default/Sett
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6690b81f5dff50d4b9c0b482860150ed
+    m_Address: Default/Singed
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66c1004a433785d4595c576001c14553
+    m_Address: Default/Gangplank
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 677bb3acf0277d647837acba65e1fb6c
+    m_Address: Default/Kassadin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68472609eddbd2a44a76e040181dc733
+    m_Address: Default/Naafiri
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 698f685300970f946aa538f3741affd7
+    m_Address: Default/Brand
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c687a605c6ec37458a08dec384673b3
+    m_Address: Default/Qiyana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c69f5c7a70a70545926387b9187bd70
+    m_Address: Default/Kennen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6cc43165cb0078e47ab20dc360163713
+    m_Address: Default/Shen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d23d6d3804e762458640ef94ccb0bbc
+    m_Address: Default/Rakan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e101a9a6dd52b6489371572bee25e0a
+    m_Address: Default/Morgana
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ef7df42d1349f74fa6d189e886952d7
+    m_Address: Default/Braum
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70c050a3d56a80a44826f47296bf7e72
+    m_Address: Default/Kindred
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7210cfeb8b24d7b4195c2ed072b0e367
+    m_Address: Default/Elise
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7212eb4e42c679845aec9ddba5a10639
+    m_Address: Default/Wukong
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73328d53f13e34748ac6af9f6a9c6ce5
+    m_Address: Default/Ziggs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 743e30661518e7f4b8334aed02aec789
+    m_Address: Default/Renata Glasc
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7529da7c28406364da56670163d18694
+    m_Address: Default/Sona
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75365ae081a1a7748848c2a190066caf
+    m_Address: Default/Blitzcrank
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7538fbb0a6864d74eb4c53ee4185b1d3
+    m_Address: Default/Jinx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 754959a6c23d6484b86cf3cc3335f286
+    m_Address: Default/Ivern
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76c86285ac0db964ab8744f5a5e363e3
+    m_Address: Default/Riven
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7822295a0beded840aebfabbbc308d97
+    m_Address: Default/Karma
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 791fa15a6cadbb84ca55235dddc95e62
+    m_Address: Default/Ekko
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 793663b3f6775664d8245a76734fb268
+    m_Address: Default/Bel'Veth
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c3a7d0f56aff4247ae2a37087e8b58b
+    m_Address: Default/Corki
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c7862b36ad6cec4aacf36a39776f564
+    m_Address: Default/Ambessa
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d42ada4aa730c542894c022c2882742
+    m_Address: Default/Nilah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e6a117a246a20048934b0c06dce8a12
+    m_Address: Default/Teemo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f0f47906d674844d8010a7d510f6e50
+    m_Address: Default/Milio
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81e998b22f148bd4a913651c2717959e
+    m_Address: Default/Ahri
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83e2b43db69fe1741a1e81e85bc27513
+    m_Address: Default/Varus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83f5dcc45d0aa21429a00ab6c054630c
+    m_Address: Default/Leona
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 853d78ad4238ea247908e8b52884bd07
+    m_Address: Default/Pantheon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85636e0bea275d54e8e909c1ccf843c7
+    m_Address: Default/Evelynn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 879d09fa09fd16347aad6651f6446b0a
+    m_Address: Default/Janna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a16ecd31483fe44a9c1ba52b9cda31a
+    m_Address: Default/Orianna
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e8183c1413f8fe428609ebe38db3508
+    m_Address: Default/Xerath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ef3f50ba053bc249b72ab66ef59bd64
+    m_Address: Default/Yorick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90176a0f4c31ccc428cb3ffe0377165d
+    m_Address: Default/Aurora
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 923f6d62074c29f4692432a725c44957
+    m_Address: Default/Aphelios
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 924dd7093616904408d7d8a5eef56315
+    m_Address: Default/Thresh
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92dae978f1429cd46b81a35e354c0fa9
+    m_Address: Default/Viktor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92fc9b5d67e1490458a25b03b65903f4
+    m_Address: Default/Vayne
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 971141e186687c54d9352361e4965f02
+    m_Address: Default/Vladimir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97b8d46a91cb67846ab6f2ab45ea8ff2
+    m_Address: Default/Taliyah
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a42e3fd4c09c2245b0f1b3a6c48bb6f
+    m_Address: Default/Ryze
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ac89546ff8bb7943b09d931a7a3fb03
+    m_Address: Default/Kog'Maw
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d78269996c0ae14ba8a4068ba623113
+    m_Address: Default/Graves
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e5734e57c1bad74a833e60613f48e40
+    m_Address: Default/Fiddlesticks
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a15c53920d14b44478de361b402dcbb8
+    m_Address: Default/Cassiopeia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a23ba7071b0642540a41c5b360a90ab7
+    m_Address: Default/Sejuani
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5b3de3747b5ef043ac0d38bd962b089
+    m_Address: Default/Sion
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa3ded18b0248484ca02c942a9251f02
+    m_Address: Default/Akshan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab7db9b7256e2464e99114f01e47790e
+    m_Address: Default/Smolder
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac9781ffd9b97134c8760fa71fd79c7f
+    m_Address: Default/Viego
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae66a635507d07d4ab598d01046d0720
+    m_Address: Default/Nautilus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae8d40783a45bf843a842eb9da31ce11
+    m_Address: Default/Kayle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5e4da25c647f32408df45f9f5db2806
+    m_Address: Default/Warwick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6ad7413f83afa245886fe961e57a2bb
+    m_Address: Default/Fiora
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7e65b7561f00544ca14047992590bc9
+    m_Address: Default/Vi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b80f2d39cd9cf4c4d96a5c81b6a7fc6e
+    m_Address: Default/Kai'Sa
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba99227b2f51a4942922fbc4d53959e4
+    m_Address: Default/Lux
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc696eb2d87fbae4da3c62c444b9dc77
+    m_Address: Default/Galio
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: beb55f7b79d43a2498222e9faa60ee5c
+    m_Address: Default/Garen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c056351a7fd0fc5458a1feaab6113474
+    m_Address: Default/Lee Sin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0a24db68feeed14381e2cf2330bd534
+    m_Address: Default/Zyra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3373b9827997c7489eff61c1844ab32
+    m_Address: Default/Jhin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c569f9ba3347e20408e456216fd3bfab
+    m_Address: Default/Draven
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c570ee02943f12d4cb2578f313e4afd6
+    m_Address: Default/Nami
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c67565fa722a2b44597313f750964e3a
+    m_Address: Default/Irelia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cffaaf84da2f75049879df042778107e
+    m_Address: Default/Skarner
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d118a53f81a5f2f48907f9c33997bdd4
+    m_Address: Default/Mordekaiser
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1942a3adb783e54c8be953938bc5ef9
+    m_Address: Default/Mel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d29b36cc279a56a4c8266346cb40d802
+    m_Address: Default/Lissandra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3ed0bef2dae0714599fa05f982c67ff
+    m_Address: Default/Camille
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d46ecdaea9f01af4a9dbeafd54729612
+    m_Address: Default/Urgot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9747924689234c4e9f660fa6469f1e3
+    m_Address: Default/Quinn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d988afba3b2fc62458e968b62df0b69b
+    m_Address: Default/Talon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db482a967b661564b8667ab1fce1d9af
+    m_Address: Default/Vex
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd62b5677c275214899754fba08e3831
+    m_Address: Default/Veigar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ddf06fb0757d77c4a9f42d06f5a436a4
+    m_Address: Default/Malphite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de84e841559c40c4196bb0f6100fc861
+    m_Address: Default/Neeko
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfc4c6cc17f59da469e99b99de32f4fb
+    m_Address: Default/Jarvan IV
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfe0655b117162d4f813ae89fb3af428
+    m_Address: Default/Fizz
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfef75bcba34ff141a7ab5eedbf5d272
+    m_Address: Default/Soraka
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e04b11e2ac8352c4292d48402093646f
+    m_Address: Default/Yasuo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e11955e1c4b602e43afa6e42dbd4d72e
+    m_Address: Default/Bard
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e32f41e9e56001b4c8a218fb33693154
+    m_Address: Default/Alistar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4f2527dbb1224c4396c948bf19a60e2
+    m_Address: Default/Zilean
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e520b26c6eea2aa489cd803cdbcb8557
+    m_Address: Default/Master Yi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e58bb48569cc40345a6944259143b0d9
+    m_Address: Default/Volibear
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e848a531eb76cee42b5a14217e7ab93f
+    m_Address: Default/Illaoi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e99b561a382eb16459c671a942491e1f
+    m_Address: Default/Ezreal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea59f9828394a784b8c0f90b91e65c02
+    m_Address: Default/Taric
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: edd6d6b88dcfba5439fcafd0b120a935
+    m_Address: Default/Kayne
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef8a4bd19c49e9f43935f5699eadd172
+    m_Address: Default/Anivia
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f040f5fb223dc9f4d8fcc1b2e3746e3e
+    m_Address: Default/Aurelion Sol
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f09f569fad5ddaa41a1ed671a9a3db25
+    m_Address: Default/Lucian
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4a4f9e44b0e79241bc46d6bf8156a81
+    m_Address: Default/Caitlyn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4e15caa259a9d042b7f770726de615a
+    m_Address: Default/Nocturne
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f68386796bfd42848bb5d5fb08529f32
+    m_Address: Default/Aatrox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f70bc165947e11c4c9290ac9afb7e566
+    m_Address: Default/Twitch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7f4452514591bc47b5e35905c56f6e9
+    m_Address: Default/Shaco
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fabdbf8cb122d80418d05bb6812b9c56
+    m_Address: Default/K'Sante
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fac883e50d4a60148bd6ad660d1a9cb4
+    m_Address: Default/LeBlanc
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbe82134f0e2e894d8a9f1593fcf4940
+    m_Address: Default/Samira
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe5bb75345eb1a2438ed694059adfb18
+    m_Address: Default/Nidalee
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fee7ccec97ccfd344b8a5b91ec7d0d74
+    m_Address: Default/KhaZix
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - downloadable/LogDefault
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e6a97d667cdbf2f419b5844a2355ebdb, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 09a71cce31e0da64ba17179b9e0abad1, type: 2}
+    - {fileID: 11400000, guid: 99c3cffc34c0cad499d536b14879c579, type: 2}

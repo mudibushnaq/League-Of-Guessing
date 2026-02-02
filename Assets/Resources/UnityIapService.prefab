@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3011774385251971431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8965562080361856158}
+  - component: {fileID: 1573186785027380639}
+  m_Layer: 0
+  m_Name: UnityIapService
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8965562080361856158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011774385251971431}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1573186785027380639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011774385251971431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb44d18c09a2c5d40834ace6d5b0cc8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMockInEditor: 0
+  forceMock: 0
+  grantImmediately: 0
+  catalog: {fileID: 11400000, guid: c1c5386e68cff26458af091c1f9bc1fa, type: 2}
+  ugsEnvironment: production
+  debugLogs: 1
+  analyticsBehaviour: {fileID: 0}
+  receiptValidatorBehaviour: {fileID: 0}
+  mockSimulateFailure: 0
+  mockDelaySeconds: 0.4
+  mockCurrency: USD
+  mockLocalized: $0.99
+  payoutSubtypeLp: LP
+  payoutSubtypeKeys: Keys
