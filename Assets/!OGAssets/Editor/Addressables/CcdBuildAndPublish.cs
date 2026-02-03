@@ -509,6 +509,7 @@ public class CcdBuildAndPublish : OdinEditorWindow
             BucketId   = BucketId,
             BucketName  = BucketName,
             Environment   = Environment,
+            DevBuild      = Opt.Dev_Build,
             DevProfiler   = Opt.Dev_Profiler,
             DevDebugging  = Opt.Dev_Debugging
         };
@@ -545,10 +546,11 @@ public class CcdBuildAndPublish : OdinEditorWindow
         }
 
         // ---- Dev toggles ----
+        Opt.Dev_Build     = root.DevBuild;
         Opt.Dev_Profiler  = root.DevProfiler;
         Opt.Dev_Debugging = root.DevDebugging;
 
-        Debug.Log($"[CcdBuildAndPublish] Prefs loaded. Profile={Addr.SelectedProfileName}, DevProfiler={Opt.Dev_Profiler}, DevDebugging={Opt.Dev_Debugging}");
+        Debug.Log($"[CcdBuildAndPublish] Prefs loaded. Profile={Addr.SelectedProfileName}, DevBuild={Opt.Dev_Build}, DevProfiler={Opt.Dev_Profiler}, DevDebugging={Opt.Dev_Debugging}");
     }
 
     public static string GetProjectScopedKey(string baseKey)
@@ -2209,11 +2211,13 @@ public class CcdBuildAndPublish : OdinEditorWindow
                 throw new Exception("No scenes are enabled in Build Settings.");
 
             // ---------- BUILD OPTIONS ----------
-            var buildOpts = isProd
-                ? BuildOptions.None
-                : BuildOptions.Development
-                  | (Opt.Dev_Profiler ? BuildOptions.ConnectWithProfiler : 0)
-                  | (Opt.Dev_Debugging ? BuildOptions.AllowDebugging : 0);
+            var buildOpts = BuildOptions.None;
+            if (!isProd && Opt.Dev_Build)
+            {
+                buildOpts = BuildOptions.Development
+                            | (Opt.Dev_Profiler ? BuildOptions.ConnectWithProfiler : 0)
+                            | (Opt.Dev_Debugging ? BuildOptions.AllowDebugging : 0);
+            }
 
             // ---------- START BUILD ----------
             EditorUtility.DisplayProgressBar("Building Player", $"Building {platform} ({artifact})...", 0.35f);
@@ -2501,6 +2505,7 @@ public sealed class EditorWindowJsonRoot
     public string EnvironmentId, EnvironmentName, BucketId, BucketName;
     public CcdBuildAndPublish.Env Environment;
     // ✅ Add these:
+    public bool DevBuild;
     public bool DevProfiler;
     public bool DevDebugging;
 }
@@ -2521,6 +2526,10 @@ public sealed class OptionsSection
     [ShowIf(nameof(ShowArtifact))]
     [ValueDropdown(nameof(GetArtifactOptions))]
     public CcdBuildAndPublish.Artifact TargetArtifact = CcdBuildAndPublish.Artifact.AAB;
+
+    [BoxGroup("Options/Player Build")]
+    [LabelText("Dev: Development Build")]
+    public bool Dev_Build = true;
 
     [BoxGroup("Options/Player Build")]
     [LabelText("Dev: Attach Profiler")]
