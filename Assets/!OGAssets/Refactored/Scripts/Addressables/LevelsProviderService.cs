@@ -38,7 +38,7 @@ public class LevelsProviderService : MonoBehaviour, ILevelsProviderService, IPro
     [Header("Prefetching")]
     [Tooltip("Number of levels to download ahead of the current level. Set to 0 to disable prefetching.")]
     [Range(0, 10)]
-    public int prefetchAheadCount = 2;
+    public int prefetchAheadCount = 1;
     
     [Tooltip("If true, shows loading UI only when a level is not yet downloaded. If false, always shows loading UI.")]
     public bool hideLoadingUIForPrefetchedLevels = true;
@@ -308,21 +308,26 @@ public class LevelsProviderService : MonoBehaviour, ILevelsProviderService, IPro
 
         try
         {
-            // Prefetch up to 'count' levels ahead
+            // Scan ahead, skipping solved levels, until we've prefetched 'count' unsolved levels.
+            // This ensures prefetched levels match what GetNextUnsolvedLevelId() will return.
             int prefetched = 0;
-            for (int i = 1; i <= count && (startIndex + i) < ids.Count; i++)
+            for (int i = 1; prefetched < count && (startIndex + i) < ids.Count; i++)
             {
                 if (cts.Token.IsCancellationRequested)
                     break;
 
                 var levelId = ids[startIndex + i];
-                
-                // Skip if already downloaded
-                if (IsLevelDownloaded(levelId, k))
+
+                // Skip solved levels - they won't be played
+                if (GameProgress.Solved.Contains(levelId))
                     continue;
 
-                // Skip solved levels (optional - you might want to prefetch them too)
-                // if (GameProgress.Solved.Contains(levelId)) continue;
+                // Already downloaded counts as ready buffer, no need to download again
+                if (IsLevelDownloaded(levelId, k))
+                {
+                    prefetched++;
+                    continue;
+                }
 
                 await PrefetchLevelAsync(levelId, k);
                 prefetched++;

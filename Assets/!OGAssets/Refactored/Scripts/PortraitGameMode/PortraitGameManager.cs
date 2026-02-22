@@ -182,11 +182,8 @@ public class PortraitGameManager : MonoBehaviour, IPortraitGameInitializable
         bool isAlreadyDownloaded = _levelsProviderService.IsLevelDownloaded(nextLevelId, mode);
         bool shouldShowLoadingUI = !isAlreadyDownloaded || !_levelsProviderService.hideLoadingUIForPrefetchedLevels;
 
-        // Prefetch levels ahead (if enabled)
-        if (_levelsProviderService.prefetchAheadCount > 0)
-        {
-            _levelsProviderService.PrefetchLevelsAheadAsync(nextLevelId, _levelsProviderService.prefetchAheadCount, mode).Forget();
-        }
+        // Prefetch the next unsolved level in background while player solves the first one
+        PrefetchNextUnsolved(nextLevelId, mode);
 
         // Show loading UI only if level is not prefetched
         if (shouldShowLoadingUI && _loadingUI != null)
@@ -383,12 +380,6 @@ public class PortraitGameManager : MonoBehaviour, IPortraitGameInitializable
         });
         _levelsProviderService.OnAssetsLoadProgress += assetProgressHandler;
 
-        // Prefetch next level ahead (if enabled)
-        if (_levelsProviderService.prefetchAheadCount > 0)
-        {
-            _levelsProviderService.PrefetchLevelAsync(nextLevelId, modeKey).Forget();
-        }
-
         // Load next level
         _current = await _levelsProviderService.LoadSingleLevelAsync(nextLevelId, modeKey);
 
@@ -406,13 +397,35 @@ public class PortraitGameManager : MonoBehaviour, IPortraitGameInitializable
             return;
         }
 
+        // Prefetch the next unsolved level in background while player solves this one
+        PrefetchNextUnsolved(nextLevelId, modeKey);
+
         // Setup UI
         SetupLevel(_current);
         UpdateLevelCounter();
         RefreshSkipButtonUI();
     }
 
-    // REMOVED: FindNextUnsolvedIndex and FindNextUnsolvedIndexFrom - now using GetNextUnsolvedLevelId from service
+    /// <summary>
+    /// Find the next unsolved level after currentLevelId (excluding it) and prefetch it silently.
+    /// Uses PrefetchLevelAsync directly to avoid cancelling any in-progress downloads.
+    /// </summary>
+    private void PrefetchNextUnsolved(string currentLevelId, string mode)
+    {
+        var ids = _levelsProviderService.GetLevelIds(mode);
+        int idx = ids.FindIndex(id => string.Equals(id, currentLevelId, StringComparison.OrdinalIgnoreCase));
+        if (idx < 0) return;
+
+        for (int i = 1; i < ids.Count; i++)
+        {
+            var id = ids[(idx + i) % ids.Count];
+            if (string.Equals(id, currentLevelId, StringComparison.OrdinalIgnoreCase)) continue;
+            if (GameProgress.Solved.Contains(id)) continue;
+
+            _levelsProviderService.PrefetchLevelAsync(id, mode).Forget();
+            return;
+        }
+    }
     
     private async UniTaskVoid TrySkipWithRewarded()
     {
@@ -1214,13 +1227,6 @@ public class PortraitGameManager : MonoBehaviour, IPortraitGameInitializable
         });
         _levelsProviderService.OnAssetsLoadProgress += assetProgressHandler;
 
-        // Prefetch next level ahead (if enabled and we have a current level)
-        if (_levelsProviderService.prefetchAheadCount > 0 && !string.IsNullOrEmpty(currentLevelId))
-        {
-            // Prefetch one more level to maintain the buffer
-            _levelsProviderService.PrefetchLevelAsync(nextLevelId, mode).Forget();
-        }
-
         // Load next level (download + load asset)
         // If already prefetched, download phase will be instant
         _current = await _levelsProviderService.LoadSingleLevelAsync(nextLevelId, mode);
@@ -1232,6 +1238,9 @@ public class PortraitGameManager : MonoBehaviour, IPortraitGameInitializable
         // Hide loading UI
         if (shouldShowLoadingUI && _loadingUI != null)
             _loadingUI.Hide();
+
+        // Prefetch the next unsolved level in background while player solves this one
+        PrefetchNextUnsolved(nextLevelId, mode);
 
         if (_current == null)
         {

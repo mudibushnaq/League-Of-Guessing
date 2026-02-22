@@ -21,6 +21,7 @@ using System.Text;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using UnityEditor.AddressableAssets.Build;
 using UnityEditor.AddressableAssets.Settings.GroupSchemas;
 using UnityEditor.Build.Profile;
 
@@ -492,6 +493,169 @@ public class CcdBuildAndPublish : OdinEditorWindow
         EditorUtility.DisplayDialog("CCD Upload", $"Upload completed.\nUploaded: {total} file(s).", "OK");
     }
     
+    async Task UploadDirectoryToCcdSmartAsync(
+        string projectId,
+        string environmentId,
+        string bucketId,
+        string localFolder,
+        string buildTarget,
+        string badge,
+        CancellationToken ct = default)
+    {
+        if (!Directory.Exists(localFolder)) throw new DirectoryNotFoundException(localFolder);
+
+        var files = Directory.GetFiles(localFolder, "*", SearchOption.AllDirectories)
+                             .Where(f => !f.EndsWith(".meta", StringComparison.OrdinalIgnoreCase))
+                             .ToArray();
+        var total = files.Length;
+        if (total == 0) { EditorUtility.DisplayDialog("CCD Smart Upload", "No files found to upload.", "OK"); return; }
+
+        // Fetch existing remote hashes (subPath -> (hash, entryId))
+        EditorUtility.DisplayProgressBar("CCD Smart Upload", "Fetching remote entry hashes...", 0.05f);
+        var remoteHashes = await FetchExistingEntryHashesAsync(projectId, environmentId, bucketId, buildTarget, badge);
+
+        // Build the prefix so we can strip it from the full CCD path to get the sub-path
+        var buildTargetFolder = EditorUserBuildSettings.activeBuildTarget.ToString();
+        var smartSettings = AddressableAssetSettingsDefaultObject.Settings;
+        var smartPs  = smartSettings.profileSettings;
+        var smartPid = smartSettings.activeProfileId;
+        var badgeFromProfile = smartPs.GetValueByName(smartPid, "ContentBadge") ?? "";
+        var localBadge = string.IsNullOrWhiteSpace(badgeFromProfile) ? ComputedBadge : badgeFromProfile;
+        var localPrefix = $"{buildTargetFolder}/{localBadge}";
+
+        // Determine which files need uploading + track local sub-paths
+        var toUpload = new List<string>();
+        var localSubPaths = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        int skipped = 0;
+
+        foreach (var file in files)
+        {
+            var localHash = ComputeMd5Hex(file);
+            var rel = BuildCcdRelativePath(localFolder, file);
+            var normRel = rel.Replace("\\", "/").Trim('/');
+
+            // Strip the "BuildTarget/Badge/" prefix to get the sub-path
+            var subPath = normRel;
+            if (normRel.StartsWith(localPrefix + "/", StringComparison.OrdinalIgnoreCase))
+                subPath = normRel.Substring(localPrefix.Length + 1);
+            else if (normRel.StartsWith(localPrefix, StringComparison.OrdinalIgnoreCase))
+                subPath = normRel.Substring(localPrefix.Length).TrimStart('/');
+
+            localSubPaths.Add(subPath);
+
+            if (remoteHashes.TryGetValue(subPath, out var remote) &&
+                string.Equals(localHash, remote.hash, StringComparison.OrdinalIgnoreCase))
+            {
+                skipped++;
+            }
+            else
+            {
+                if (toUpload.Count < 5)
+                {
+                    var found = remoteHashes.TryGetValue(subPath, out var dbg);
+                    Debug.Log($"[CCD Smart Upload] CHANGED: subPath='{subPath}', found={found}, localHash={localHash}, remoteHash={(found ? dbg.hash : "N/A")}");
+                }
+                toUpload.Add(file);
+            }
+        }
+
+        // Delete orphaned CCD entries (exist remotely but not locally)
+        var orphanIds = remoteHashes
+            .Where(kv => !localSubPaths.Contains(kv.Key) && !string.IsNullOrEmpty(kv.Value.entryId))
+            .Select(kv => kv.Value.entryId)
+            .ToList();
+
+        if (orphanIds.Count > 0)
+        {
+            Debug.Log($"[CCD Smart Upload] Deleting {orphanIds.Count} orphaned CCD entries not in local build...");
+            EditorUtility.DisplayProgressBar("CCD Smart Upload", $"Deleting {orphanIds.Count} orphaned entries...", 0.08f);
+
+            using var httpDel = CreateHttpWithBasic();
+            const int batchSize = 200;
+            for (int i = 0; i < orphanIds.Count; i += batchSize)
+            {
+                var batch = orphanIds.Skip(i).Take(batchSize).Select(id => new { entryid = id }).ToArray();
+                var deleteUrl = $"{CCD_MGMT_BASE}/projects/{projectId}/environments/{environmentId}/buckets/{bucketId}/batch/delete/entries";
+                var jsonBody = JsonConvert.SerializeObject(batch);
+                using var deleteReq = new HttpRequestMessage(HttpMethod.Post, deleteUrl);
+                deleteReq.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+                deleteReq.Headers.Add("X-HTTP-Method-Override", "DELETE");
+
+                using var deleteResp = await httpDel.SendAsync(deleteReq);
+                if (!deleteResp.IsSuccessStatusCode)
+                {
+                    var txt = await deleteResp.Content.ReadAsStringAsync();
+                    Debug.LogWarning($"[CCD Smart Upload] Orphan delete batch failed: {deleteResp.StatusCode} {txt}");
+                }
+            }
+            Debug.Log($"[CCD Smart Upload] Deleted {orphanIds.Count} orphaned entries.");
+        }
+
+        Debug.Log($"[CCD Smart Upload] {toUpload.Count} changed/new files, {skipped} skipped (unchanged), {orphanIds.Count} orphans deleted, out of {total} local / {remoteHashes.Count} remote");
+
+        if (toUpload.Count == 0)
+        {
+            EditorUtility.ClearProgressBar();
+            EditorUtility.DisplayDialog("CCD Smart Upload",
+                $"All {total} files are already up-to-date in CCD.\n{orphanIds.Count} orphaned entries cleaned up.\n\nNothing to upload.", "OK");
+            return;
+        }
+
+        using var http = new HttpClient();
+        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Auth.AuthorizationHeader);
+
+        var uploadTotal = toUpload.Count;
+        _uplTitle = "CCD Smart Upload";
+        _uplInfo = $"Uploading {uploadTotal} changed files ({skipped} skipped)...";
+        _uplOverall01 = 0f;
+
+        StartUploadProgressPump(_uplTitle);
+        await ShowProgressAndWaitAsync(_uplTitle, _uplInfo, 0f);
+
+        try
+        {
+            for (int i = 0; i < uploadTotal; i++)
+            {
+                ct.ThrowIfCancellationRequested();
+
+                var file = toUpload[i];
+                var fileName = Path.GetFileName(file);
+                int fileIndex = i;
+
+                _uplInfo = $"Uploading {i + 1}/{uploadTotal} changed • {fileName}  (0%)  [{skipped} skipped]";
+                _uplOverall01 = (float)i / uploadTotal;
+
+                void OnFileProgress(long sent, long size)
+                {
+                    var filePct = size > 0 ? (float)sent / size : 1f;
+                    var overall = (fileIndex + filePct) / uploadTotal;
+                    _uplInfo = $"Uploading {fileIndex + 1}/{uploadTotal} changed • {fileName}  ({Mathf.RoundToInt(filePct * 100)}%)  [{skipped} skipped]";
+                    _uplOverall01 = overall;
+                }
+
+                var uploadTask = UploadFileToCcdWithProgressAsync(
+                    http, projectId, environmentId, bucketId,
+                    localFolder, file, OnFileProgress, ct);
+
+                await WaitWithProgressUpdatesAsync(uploadTask);
+
+                _uplInfo = $"Uploaded {i + 1}/{uploadTotal} changed • {fileName}  (100%)  [{skipped} skipped]";
+                _uplOverall01 = (i + 1f) / uploadTotal;
+
+                Debug.Log($"[CCD Smart Upload] {_uplInfo}");
+                await ShowProgressAndWaitAsync(_uplTitle, _uplInfo, _uplOverall01);
+            }
+        }
+        finally
+        {
+            StopUploadProgressPump();
+        }
+
+        EditorUtility.ClearProgressBar();
+        EditorUtility.DisplayDialog("CCD Smart Upload",
+            $"Upload completed.\n\nUploaded: {uploadTotal} changed file(s)\nSkipped: {skipped} unchanged file(s)\nTotal: {total} file(s)", "OK");
+    }
+
     protected override void OnImGUI()
     {
         // Now draw Odin's normal inspector
@@ -786,7 +950,153 @@ public class CcdBuildAndPublish : OdinEditorWindow
             EditorUtility.DisplayDialog("Error", ex.Message, "OK");
         }
     }
-    
+
+    [TabGroup("Tabs", "Build & Publish")]
+    [Button(ButtonSizes.Large), GUIColor(0.9f, 0.8f, 1f)]
+    [InfoBox("Incremental build: uses ContentUpdateScript to rebuild only changed bundles, then smart-uploads changed files only.")]
+    public async void Content_Update_Build_And_Publish()
+    {
+        try
+        {
+            ApplyAddressablesProfileVars();
+            var settings = AddressableAssetSettingsDefaultObject.Settings
+                           ?? throw new Exception("Addressables Settings missing.");
+            EnsureContentBadgeMatchesBundleVersion();
+
+            var ps  = settings.profileSettings;
+            var pid = settings.activeProfileId;
+
+            var envName = ps.GetValueByName(pid, "EnvironmentName");
+            if (string.IsNullOrEmpty(envName))
+                throw new Exception("Profile variable 'EnvironmentName' is empty. Please select a valid environment.");
+
+            var envId     = EnsureGuid(GetEnvId(Environment), "SelectedEnvironmentId");
+            var bucketId  = EnsureGuid(SelectedBucketId, "SelectedBucketId");
+            var projectId = EnsureGuid(Auth.ProjectId, nameof(Auth.ProjectId));
+
+            var profileBadge = ps.GetValueByName(pid, "ContentBadge") ?? "";
+            var rawBadge     = string.IsNullOrWhiteSpace(profileBadge) ? ComputedBadge : profileBadge;
+            var badge        = SanitizeBadgeName(rawBadge);
+            var buildTarget  = EditorUserBuildSettings.activeBuildTarget.ToString();
+
+            // Locate addressables_content_state.bin
+            string contentStateDataPath = null;
+
+            // Primary: CCDBuildData/[BuildTarget]/[EnvName]/[BucketName]/[Badge]/addressables_content_state.bin
+            var primaryPath = Path.Combine(
+                Directory.GetCurrentDirectory(),
+                "CCDBuildData", buildTarget, envName, SelectedBucketName, badge,
+                "addressables_content_state.bin");
+            if (File.Exists(primaryPath))
+            {
+                contentStateDataPath = primaryPath;
+                Debug.Log($"[Content Update] Found state file (primary): {primaryPath}");
+            }
+
+            // Fallback: Library/com.unity.addressables/[BuildTarget]/addressables_content_state.bin
+            if (contentStateDataPath == null)
+            {
+                var fallbackPath = Path.Combine(
+                    Directory.GetCurrentDirectory(),
+                    "Library", "com.unity.addressables", buildTarget,
+                    "addressables_content_state.bin");
+                if (File.Exists(fallbackPath))
+                {
+                    contentStateDataPath = fallbackPath;
+                    Debug.Log($"[Content Update] Found state file (fallback): {fallbackPath}");
+                }
+            }
+
+            // If no state file found, offer full build instead
+            if (string.IsNullOrEmpty(contentStateDataPath))
+            {
+                var doFull = EditorUtility.DisplayDialog(
+                    "No Content State File Found",
+                    "Could not find addressables_content_state.bin from a previous build.\n\n" +
+                    "Locations checked:\n" +
+                    $"1) {primaryPath}\n" +
+                    $"2) Library/com.unity.addressables/{buildTarget}/addressables_content_state.bin\n\n" +
+                    "A full build is required first. Would you like to do a full build instead?",
+                    "Yes, Full Build", "Cancel");
+
+                if (!doFull) return;
+
+                // Redirect to full build
+                Build_Addressables_And_Publish_CCD();
+                return;
+            }
+
+            if (!EditorUtility.DisplayDialog("Confirm Content Update Build + Publish",
+                    $"This will:\n\n" +
+                    $"• Incremental Addressables build (ContentUpdateScript)\n" +
+                    $"• Smart upload (changed files only)\n" +
+                    $"• Create Release + Assign badge '{badge}'\n\n" +
+                    $"State file:\n{contentStateDataPath}\n\n" +
+                    $"Env: {envId}\nBucket: {bucketId}\n\nProceed?",
+                    "Yes, do it", "Cancel")) return;
+
+            // Update profile variables
+            ps.SetValue(pid, "BucketId", SelectedBucketId);
+            ps.SetValue(pid, "EnvironmentName", envName);
+            ps.SetValue(pid, "ContentBadge", badge);
+            ps.SetValue(pid, "Remote.LoadPath",
+                $"https://[ProjectId].client-api.unity3dusercontent.com/client_api/v1/environments/{envName}/buckets/[BucketId]/release_by_badge/[ContentBadge]/entry_by_path/content/?path=[BuildTarget]/[ContentBadge]");
+            ps.SetValue(pid, "Remote.BuildPath", $"CCDBuildData/[BuildTarget]/{envName}/{SelectedBucketName}/[ContentBadge]");
+            settings.profileSettings.SetValue(pid, "ProfileVersion", DateTime.Now.ToString("yyyyMMddHHmmss"));
+
+            EditorUtility.SetDirty(settings);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+
+            // Build incremental update
+            EditorUtility.DisplayProgressBar("Content Update Build", "Step 1/4 • Building content update...", 0.15f);
+            AddressableAssetBuildResult buildResult;
+            using (new RemotePathOverrideScope(settings, SelectedBucketId, SelectedEnvironmentName))
+            {
+                buildResult = ContentUpdateScript.BuildContentUpdate(settings, contentStateDataPath);
+            }
+
+            if (buildResult != null && !string.IsNullOrEmpty(buildResult.Error))
+                throw new Exception($"Content update build failed: {buildResult.Error}");
+
+            // Wait for build folder
+            var localDir = GetEvaluatedRemoteBuildPath(settings);
+            for (int i = 0; i < 20; i++)
+            {
+                if (Directory.Exists(localDir)) break;
+                await UniTask.Delay(500);
+            }
+
+            if (!Directory.Exists(localDir))
+                throw new DirectoryNotFoundException($"Addressables build folder not found after content update: {localDir}");
+
+            Debug.Log($"[Content Update] Built to: {localDir}");
+
+            // Smart upload
+            EditorUtility.DisplayProgressBar("Content Update Build", "Step 2/4 • Smart uploading to CCD...", 0.45f);
+            await UploadDirectoryToCcdSmartAsync(projectId, envId, bucketId, localDir, buildTarget, badge);
+
+            // Create release
+            EditorUtility.DisplayProgressBar("Content Update Build", "Step 3/4 • Creating Release...", 0.75f);
+            var releaseId = await CreateCcdRelease_MgmtAsync(projectId, envId, bucketId, $"Content update for {badge}");
+
+            // Assign badge
+            EditorUtility.DisplayProgressBar("Content Update Build", "Step 4/4 • Assigning Badge...", 0.90f);
+            await AssignCcdBadge_MgmtAsync(projectId, envId, bucketId, badge, releaseId);
+
+            EditorUtility.ClearProgressBar();
+            EditorUtility.DisplayDialog("Content Update Complete",
+                $"Incremental build and publish finished!\n\nBadge: {badge}\nRelease ID: {releaseId}", "OK");
+            Debug.Log($"[Content Update] Done — Badge={badge}, ReleaseId={releaseId}");
+        }
+        catch (Exception ex)
+        {
+            EditorUtility.ClearProgressBar();
+            Debug.LogError($"[Content_Update_Build_And_Publish] FAILED: {ex}");
+            EditorUtility.DisplayDialog("Error", ex.Message, "OK");
+        }
+    }
+
     // Get the evaluated RemoteBuildPath from the active profile
     string GetEvaluatedRemoteBuildPath(AddressableAssetSettings settings)
     {
@@ -1375,12 +1685,13 @@ public class CcdBuildAndPublish : OdinEditorWindow
 
         // 1) Page through entries and collect IDs that start with any of the candidate prefixes
         var toDelete = new List<string>();
-        var listUrl = $"{CCD_MGMT_BASE}/projects/{projectId}/environments/{environmentId}/buckets/{bucketId}/entries?per_page=200";
-        int page = 1;
-        int matchedDebugCount = 0;
+        const int deletePerPage = 100;
+        var deleteBaseUrl = $"{CCD_MGMT_BASE}/projects/{projectId}/environments/{environmentId}/buckets/{bucketId}/entries";
 
-        while (!string.IsNullOrEmpty(listUrl))
+        for (int page = 1; ; page++)
         {
+            var listUrl = $"{deleteBaseUrl}?per_page={deletePerPage}&page={page}";
+
             using var listReq  = new HttpRequestMessage(HttpMethod.Get, listUrl);
             using var listResp = await http.SendAsync(listReq);
             var json = await listResp.Content.ReadAsStringAsync();
@@ -1400,27 +1711,11 @@ public class CcdBuildAndPublish : OdinEditorWindow
                     continue;
 
                 var normPath = path.Replace("\\", "/").Trim('/');
-                // Match against any candidate prefix
                 if (!prefixes.Any(p => normPath.StartsWith(p, StringComparison.OrdinalIgnoreCase))) continue;
                 toDelete.Add(id);
-                if (matchedDebugCount < 10)
-                {
-                    matchedDebugCount++;
-                }
             }
 
-            // Pagination via RFC5988 Link header
-            if (listResp.Headers.TryGetValues("Link", out var links))
-            {
-                var linkHeader = links.FirstOrDefault();
-                var m = System.Text.RegularExpressions.Regex.Match(linkHeader ?? "", @"<([^>]+)>\s*;\s*rel=""next""");
-                listUrl = m.Success ? m.Groups[1].Value : null;
-                page++;
-            }
-            else
-            {
-                listUrl = null;
-            }
+            if (arr.Count < deletePerPage) break;
         }
 
         if (toDelete.Count == 0)
@@ -1476,6 +1771,87 @@ public class CcdBuildAndPublish : OdinEditorWindow
         return http;
     }
     
+    // Returns: subPath -> (content_hash, entryid)
+    async Task<Dictionary<string, (string hash, string entryId)>> FetchExistingEntryHashesAsync(
+        string projectId, string environmentId, string bucketId, string buildTarget, string badge)
+    {
+        using var http = CreateHttpWithBasic();
+
+        var prefixes = CandidatePrefixes(buildTarget, badge)
+            .Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+
+        Debug.Log($"[CCD Smart] Badge='{badge}', BuildTarget='{buildTarget}'");
+        Debug.Log($"[CCD Smart] Candidate prefixes:\n  " + string.Join("\n  ", prefixes));
+
+        var result = new Dictionary<string, (string hash, string entryId)>(StringComparer.OrdinalIgnoreCase);
+        if (prefixes.Length == 0) return result;
+
+        const int perPage = 100;
+        var baseUrl = $"{CCD_MGMT_BASE}/projects/{projectId}/environments/{environmentId}" +
+                      $"/buckets/{bucketId}/entries";
+
+        int totalEntriesFromCcd = 0;
+        int matchedEntries = 0;
+        int skippedEntries = 0;
+        int pageCount = 0;
+        var sampleSkipped = new List<string>();
+
+        for (int page = 1; ; page++)
+        {
+            var listUrl = $"{baseUrl}?per_page={perPage}&page={page}";
+
+            using var req  = new HttpRequestMessage(HttpMethod.Get, listUrl);
+            using var resp = await http.SendAsync(req);
+            var json = await resp.Content.ReadAsStringAsync();
+
+            if (!resp.IsSuccessStatusCode)
+                throw new Exception($"Failed to list CCD entries: {resp.StatusCode} {json}");
+
+            var arr = JsonConvert.DeserializeObject<JArray>(json);
+            if (arr == null || arr.Count == 0) break;
+
+            pageCount++;
+            totalEntriesFromCcd += arr.Count;
+
+            foreach (var e in arr)
+            {
+                var path = (string)e["path"];
+                var hash = (string)e["content_hash"];
+                var entryId = (string)e["entryid"];
+                if (string.IsNullOrEmpty(path)) continue;
+
+                var normPath = path.Replace("\\", "/").Trim('/');
+
+                var matchedPrefix = prefixes.FirstOrDefault(
+                    p => normPath.StartsWith(p, StringComparison.OrdinalIgnoreCase));
+                if (matchedPrefix == null)
+                {
+                    skippedEntries++;
+                    if (sampleSkipped.Count < 5)
+                        sampleSkipped.Add(normPath);
+                    continue;
+                }
+
+                matchedEntries++;
+                var subPath = normPath.Substring(matchedPrefix.TrimEnd('/').Length).TrimStart('/');
+                if (!string.IsNullOrEmpty(subPath))
+                    result[subPath] = (hash ?? "", entryId ?? "");
+            }
+
+            if (arr.Count < perPage) break;
+        }
+
+        Debug.Log($"[CCD Smart] Pages fetched: {pageCount}, Total CCD entries: {totalEntriesFromCcd}, " +
+                  $"Matched badge prefix: {matchedEntries}, Skipped (other badge): {skippedEntries}");
+        if (sampleSkipped.Count > 0)
+            Debug.Log($"[CCD Smart] Sample NON-matching CCD paths:\n  " + string.Join("\n  ", sampleSkipped));
+        if (result.Count > 0)
+            Debug.Log($"[CCD Smart] Sample MATCHING sub-paths:\n  " +
+                      string.Join("\n  ", result.Keys.Take(3)));
+        Debug.Log($"[CCD Smart] Fetched {result.Count} existing entry hashes for badge '{badge}'");
+        return result;
+    }
+
     private void RefreshComputedFields()
     {
         // 🧭 Use the correct bundle version from the active Build Profile
@@ -1815,16 +2191,19 @@ public class CcdBuildAndPublish : OdinEditorWindow
             var badge       = string.IsNullOrWhiteSpace(badgeRaw) ? ComputedBadge : badgeRaw;
 
             using var http = CreateHttpWithBasic();
-            var listUrl =
-                $"{CCD_MGMT_BASE}/projects/{projectId}/environments/{envId}/buckets/{bucketId}/entries?per_page=200";
+            const int listPerPage = 100;
+            var listBaseUrl =
+                $"{CCD_MGMT_BASE}/projects/{projectId}/environments/{envId}/buckets/{bucketId}/entries";
 
             var prefixes = CandidatePrefixes(buildTarget, badge).Select(p => p.Trim('/') + "/").ToArray();
             Debug.Log($"[CCD Debug] Current BuildTarget='{buildTarget}', Badge='{badge}'");
 
-            int total = 0, matches = 0, page = 1;
+            int total = 0, matches = 0;
 
-            while (!string.IsNullOrEmpty(listUrl))
+            for (int page = 1; ; page++)
             {
+                var listUrl = $"{listBaseUrl}?per_page={listPerPage}&page={page}";
+
                 using var listReq  = new HttpRequestMessage(HttpMethod.Get, listUrl);
                 using var listResp = await http.SendAsync(listReq);
                 var json = await listResp.Content.ReadAsStringAsync();
@@ -1845,19 +2224,12 @@ public class CcdBuildAndPublish : OdinEditorWindow
                     string badgeFromPath = ExtractBadgeFromPath(path);
                     string norm = NormalizeCcdPath(path);
                     bool match  = prefixes.Any(pfx => norm.StartsWith(pfx, StringComparison.OrdinalIgnoreCase));
-                    
+
                     total++;
                     if (match) matches++;
                 }
 
-                if (listResp.Headers.TryGetValues("Link", out var links))
-                {
-                    var linkHeader = links.FirstOrDefault();
-                    var m = System.Text.RegularExpressions.Regex.Match(linkHeader ?? "", @"<([^>]+)>\s*;\s*rel=""next""");
-                    listUrl = m.Success ? m.Groups[1].Value : null;
-                    page++;
-                }
-                else listUrl = null;
+                if (arr.Count < listPerPage) break;
             }
 
             Debug.Log($"[CCD Debug] ✅ Total entries: {total}. Matching current badge: {matches}.");
@@ -2030,7 +2402,73 @@ public class CcdBuildAndPublish : OdinEditorWindow
             EditorUtility.DisplayDialog("Error", ex.Message, "OK");
         }
     }
-    
+
+    [TabGroup("Tabs", "For Testing Only")]
+    [Button(ButtonSizes.Large)]
+    [GUIColor(0.6f, 1f, 0.85f)]
+    [InfoBox("Smart Upload: only uploads files whose content hash differs from CCD. Creates release + assigns badge.")]
+    public async void Smart_Upload_Changed_Only()
+    {
+        try
+        {
+            ApplyAddressablesProfileVars();
+
+            var settings = AddressableAssetSettingsDefaultObject.Settings
+                           ?? throw new Exception("Addressables Settings missing.");
+            var ps        = settings.profileSettings;
+            var pid       = settings.activeProfileId;
+            var envName   = ps.GetValueByName(pid, "EnvironmentName");
+            var projectId = EnsureGuid(Auth.ProjectId, nameof(Auth.ProjectId));
+            var envId     = EnsureGuid(GetEnvId(Environment), "SelectedEnvironmentId");
+            var bucketId  = EnsureGuid(SelectedBucketId, "SelectedBucketId");
+
+            if (string.IsNullOrEmpty(envName))
+                throw new Exception("Profile variable 'EnvironmentName' is empty. Please select a valid environment.");
+
+            var badge       = SanitizeBadgeName(ps.GetValueByName(pid, "ContentBadge") ?? ComputedBadge);
+            var buildTarget = EditorUserBuildSettings.activeBuildTarget.ToString();
+
+            // Update profile variables to use bucket name BEFORE evaluating
+            ps.SetValue(pid, "BucketId", bucketId);
+            ps.SetValue(pid, "EnvironmentName", envName);
+            ps.SetValue(pid, "ContentBadge", badge);
+            ps.SetValue(pid, "Remote.BuildPath", $"CCDBuildData/[BuildTarget]/{envName}/{SelectedBucketName}/[ContentBadge]");
+            EditorUtility.SetDirty(settings);
+            AssetDatabase.SaveAssets();
+
+            var localDir = GetEvaluatedRemoteBuildPath(settings);
+            if (!Directory.Exists(localDir))
+                throw new DirectoryNotFoundException($"Local Addressables build folder not found:\n{localDir}");
+
+            if (!EditorUtility.DisplayDialog("Confirm Smart Upload",
+                    $"This will upload only CHANGED files to CCD, then create a release and assign the badge.\n\n" +
+                    $"Environment: {envName}\nBucket: {bucketId}\nBadge: {badge}\n\nSource:\n{localDir}\n\nProceed?",
+                    "Yes, Smart Upload", "Cancel"))
+                return;
+
+            // Smart upload
+            await UploadDirectoryToCcdSmartAsync(projectId, envId, bucketId, localDir, buildTarget, badge);
+
+            // Create release + assign badge
+            EditorUtility.DisplayProgressBar("CCD Smart Upload", "Creating Release...", 0.85f);
+            var releaseId = await CreateCcdRelease_MgmtAsync(projectId, envId, bucketId, $"Smart upload for {badge}");
+
+            EditorUtility.DisplayProgressBar("CCD Smart Upload", "Assigning Badge...", 0.95f);
+            await AssignCcdBadge_MgmtAsync(projectId, envId, bucketId, badge, releaseId);
+
+            EditorUtility.ClearProgressBar();
+            EditorUtility.DisplayDialog("Smart Upload Complete",
+                $"Smart upload finished!\n\nBadge: {badge}\nRelease ID: {releaseId}", "OK");
+            Debug.Log($"[CCD Smart Upload] Done — Badge={badge}, ReleaseId={releaseId}");
+        }
+        catch (Exception ex)
+        {
+            EditorUtility.ClearProgressBar();
+            Debug.LogError($"[Smart_Upload_Changed_Only] FAILED: {ex}");
+            EditorUtility.DisplayDialog("Error", ex.Message, "OK");
+        }
+    }
+
     [TabGroup("Tabs", "For Testing Only")]
     [Button(ButtonSizes.Large)]
     [GUIColor(1f, 0.9f, 0.6f)]

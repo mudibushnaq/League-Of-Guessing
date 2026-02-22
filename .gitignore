@@ -1,6 +1,9 @@
 .idea/
 .utmp/
 CCDBuildData/
+Assets/!OGAssets/Utility/
+Assets/PlayAssetDelivery/
+.claude/
 League Of Guessing_BurstDebugInformation_DoNotShip/
 Builds/
 

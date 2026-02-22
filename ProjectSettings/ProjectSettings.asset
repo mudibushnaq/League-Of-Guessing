@@ -264,16 +264,16 @@ PlayerSettings:
   templateDefaultScene: 
   useCustomMainManifest: 0
   useCustomLauncherManifest: 0
-  useCustomMainGradleTemplate: 0
+  useCustomMainGradleTemplate: 1
   useCustomLauncherGradleManifest: 0
   useCustomBaseGradleTemplate: 0
-  useCustomGradlePropertiesTemplate: 0
-  useCustomGradleSettingsTemplate: 0
+  useCustomGradlePropertiesTemplate: 1
+  useCustomGradleSettingsTemplate: 1
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 2
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: Assets/!OGAssets/Utility/Keystores/uploadkey.keystore'
+  AndroidKeystoreName: C:/workspace/unity/League Of Guessing/Assets/!OGAssets/Utility/Keystores/uploadkey.keystore
   AndroidKeyaliasName: og
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
@@ -1131,7 +1131,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: BlackScreenTest
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -1139,7 +1139,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: BlackScreenTest
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: League Of Guessing
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
